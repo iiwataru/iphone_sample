@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		637CD8E515A33F9400A1BAB9 /* APJapanesefont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 637CD8E415A33F9400A1BAB9 /* APJapanesefont.ttf */; };
-		637CD8E815A33FBB00A1BAB9 /* APJapanesefontT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 637CD8E715A33FBB00A1BAB9 /* APJapanesefontT.ttf */; };
-		637CD8EA15A347CF00A1BAB9 /* TanukiMagic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 637CD8E915A347CF00A1BAB9 /* TanukiMagic.ttf */; };
 		63F3FB9515A32D8100A4D438 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F3FB9415A32D8100A4D438 /* UIKit.framework */; };
 		63F3FB9715A32D8100A4D438 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F3FB9615A32D8100A4D438 /* Foundation.framework */; };
 		63F3FB9915A32D8100A4D438 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F3FB9815A32D8100A4D438 /* CoreGraphics.framework */; };
@@ -37,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		637CD8E415A33F9400A1BAB9 /* APJapanesefont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = APJapanesefont.ttf; sourceTree = "<group>"; };
-		637CD8E715A33FBB00A1BAB9 /* APJapanesefontT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = APJapanesefontT.ttf; sourceTree = "<group>"; };
-		637CD8E915A347CF00A1BAB9 /* TanukiMagic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TanukiMagic.ttf; sourceTree = "<group>"; };
 		63F3FB9015A32D8100A4D438 /* MyFontSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFontSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F3FB9415A32D8100A4D438 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63F3FB9615A32D8100A4D438 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				637CD8E415A33F9400A1BAB9 /* APJapanesefont.ttf */,
-				637CD8E715A33FBB00A1BAB9 /* APJapanesefontT.ttf */,
-				637CD8E915A347CF00A1BAB9 /* TanukiMagic.ttf */,
 				63F3FB9A15A32D8100A4D438 /* MyFontSelection */,
 				63F3FBB815A32D8200A4D438 /* MyFontSelectionTests */,
 				63F3FB9315A32D8100A4D438 /* Frameworks */,
@@ -242,8 +236,6 @@
 			files = (
 				63F3FBBD15A32D8200A4D438 /* InfoPlist.strings in Resources */,
 				637CD8E515A33F9400A1BAB9 /* APJapanesefont.ttf in Resources */,
-				637CD8E815A33FBB00A1BAB9 /* APJapanesefontT.ttf in Resources */,
-				637CD8EA15A347CF00A1BAB9 /* TanukiMagic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
