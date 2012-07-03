@@ -10,4 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *tf;
+@property (weak, nonatomic) IBOutlet UILabel *labelAnzu;
+
+- (IBAction)buttonAnzu:(id)sender;
+- (IBAction)buttonSystem:(id)sender;
+- (IBAction)buttonAppleGothic:(id)sender;
+- (IBAction)buttonCourier:(id)sender;
+
 @end
