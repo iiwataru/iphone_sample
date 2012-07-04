@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NSMutableArray *imageArray;//複数選択画像の格納用
+
 @interface ViewController : UIViewController<UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 - (IBAction)buttonGallery:(id)sender;
