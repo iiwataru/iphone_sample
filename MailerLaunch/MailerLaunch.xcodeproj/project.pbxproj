@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		637CDA6115A53E5F00A1BAB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CDA6015A53E5F00A1BAB9 /* UIKit.framework */; };
+		637CDA6315A53E5F00A1BAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CDA6215A53E5F00A1BAB9 /* Foundation.framework */; };
+		637CDA6515A53E5F00A1BAB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CDA6415A53E5F00A1BAB9 /* CoreGraphics.framework */; };
+		637CDA6B15A53E5F00A1BAB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 637CDA6915A53E5F00A1BAB9 /* InfoPlist.strings */; };
+		637CDA6D15A53E5F00A1BAB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA6C15A53E5F00A1BAB9 /* main.m */; };
+		637CDA7115A53E5F00A1BAB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA7015A53E5F00A1BAB9 /* AppDelegate.m */; };
+		637CDA7415A53E5F00A1BAB9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637CDA7215A53E5F00A1BAB9 /* MainStoryboard.storyboard */; };
+		637CDA7715A53E5F00A1BAB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA7615A53E5F00A1BAB9 /* ViewController.m */; };
+		637CDA7F15A53E5F00A1BAB9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CDA7E15A53E5F00A1BAB9 /* SenTestingKit.framework */; };
+		637CDA8015A53E5F00A1BAB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CDA6015A53E5F00A1BAB9 /* UIKit.framework */; };
+		637CDA8115A53E5F00A1BAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CDA6215A53E5F00A1BAB9 /* Foundation.framework */; };
+		637CDA8915A53E5F00A1BAB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 637CDA8715A53E5F00A1BAB9 /* InfoPlist.strings */; };
+		637CDA8C15A53E6000A1BAB9 /* MailerLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA8B15A53E6000A1BAB9 /* MailerLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		637CDA8215A53E5F00A1BAB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637CDA5315A53E5F00A1BAB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637CDA5B15A53E5F00A1BAB9;
+			remoteInfo = MailerLaunch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		637CDA5C15A53E5F00A1BAB9 /* MailerLaunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailerLaunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		637CDA6015A53E5F00A1BAB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		637CDA6215A53E5F00A1BAB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		637CDA6415A53E5F00A1BAB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		637CDA6815A53E5F00A1BAB9 /* MailerLaunch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MailerLaunch-Info.plist"; sourceTree = "<group>"; };
+		637CDA6A15A53E5F00A1BAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		637CDA6C15A53E5F00A1BAB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		637CDA6E15A53E5F00A1BAB9 /* MailerLaunch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailerLaunch-Prefix.pch"; sourceTree = "<group>"; };
+		637CDA6F15A53E5F00A1BAB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		637CDA7015A53E5F00A1BAB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		637CDA7315A53E5F00A1BAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		637CDA7515A53E5F00A1BAB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		637CDA7615A53E5F00A1BAB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		637CDA7D15A53E5F00A1BAB9 /* MailerLaunchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailerLaunchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		637CDA7E15A53E5F00A1BAB9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		637CDA8615A53E5F00A1BAB9 /* MailerLaunchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MailerLaunchTests-Info.plist"; sourceTree = "<group>"; };
+		637CDA8815A53E5F00A1BAB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		637CDA8A15A53E6000A1BAB9 /* MailerLaunchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailerLaunchTests.h; sourceTree = "<group>"; };
+		637CDA8B15A53E6000A1BAB9 /* MailerLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MailerLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		637CDA5915A53E5F00A1BAB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CDA6115A53E5F00A1BAB9 /* UIKit.framework in Frameworks */,
+				637CDA6315A53E5F00A1BAB9 /* Foundation.framework in Frameworks */,
+				637CDA6515A53E5F00A1BAB9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CDA7915A53E5F00A1BAB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CDA7F15A53E5F00A1BAB9 /* SenTestingKit.framework in Frameworks */,
+				637CDA8015A53E5F00A1BAB9 /* UIKit.framework in Frameworks */,
+				637CDA8115A53E5F00A1BAB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		637CDA5115A53E5F00A1BAB9 = {
+			isa = PBXGroup;
+			children = (
+				637CDA6615A53E5F00A1BAB9 /* MailerLaunch */,
+				637CDA8415A53E5F00A1BAB9 /* MailerLaunchTests */,
+				637CDA5F15A53E5F00A1BAB9 /* Frameworks */,
+				637CDA5D15A53E5F00A1BAB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		637CDA5D15A53E5F00A1BAB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				637CDA5C15A53E5F00A1BAB9 /* MailerLaunch.app */,
+				637CDA7D15A53E5F00A1BAB9 /* MailerLaunchTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		637CDA5F15A53E5F00A1BAB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				637CDA6015A53E5F00A1BAB9 /* UIKit.framework */,
+				637CDA6215A53E5F00A1BAB9 /* Foundation.framework */,
+				637CDA6415A53E5F00A1BAB9 /* CoreGraphics.framework */,
+				637CDA7E15A53E5F00A1BAB9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		637CDA6615A53E5F00A1BAB9 /* MailerLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				637CDA6F15A53E5F00A1BAB9 /* AppDelegate.h */,
+				637CDA7015A53E5F00A1BAB9 /* AppDelegate.m */,
+				637CDA7215A53E5F00A1BAB9 /* MainStoryboard.storyboard */,
+				637CDA7515A53E5F00A1BAB9 /* ViewController.h */,
+				637CDA7615A53E5F00A1BAB9 /* ViewController.m */,
+				637CDA6715A53E5F00A1BAB9 /* Supporting Files */,
+			);
+			path = MailerLaunch;
+			sourceTree = "<group>";
+		};
+		637CDA6715A53E5F00A1BAB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				637CDA6815A53E5F00A1BAB9 /* MailerLaunch-Info.plist */,
+				637CDA6915A53E5F00A1BAB9 /* InfoPlist.strings */,
+				637CDA6C15A53E5F00A1BAB9 /* main.m */,
+				637CDA6E15A53E5F00A1BAB9 /* MailerLaunch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		637CDA8415A53E5F00A1BAB9 /* MailerLaunchTests */ = {
+			isa = PBXGroup;
+			children = (
+				637CDA8A15A53E6000A1BAB9 /* MailerLaunchTests.h */,
+				637CDA8B15A53E6000A1BAB9 /* MailerLaunchTests.m */,
+				637CDA8515A53E5F00A1BAB9 /* Supporting Files */,
+			);
+			path = MailerLaunchTests;
+			sourceTree = "<group>";
+		};
+		637CDA8515A53E5F00A1BAB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				637CDA8615A53E5F00A1BAB9 /* MailerLaunchTests-Info.plist */,
+				637CDA8715A53E5F00A1BAB9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		637CDA5B15A53E5F00A1BAB9 /* MailerLaunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637CDA8F15A53E6000A1BAB9 /* Build configuration list for PBXNativeTarget "MailerLaunch" */;
+			buildPhases = (
+				637CDA5815A53E5F00A1BAB9 /* Sources */,
+				637CDA5915A53E5F00A1BAB9 /* Frameworks */,
+				637CDA5A15A53E5F00A1BAB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailerLaunch;
+			productName = MailerLaunch;
+			productReference = 637CDA5C15A53E5F00A1BAB9 /* MailerLaunch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		637CDA7C15A53E5F00A1BAB9 /* MailerLaunchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637CDA9215A53E6000A1BAB9 /* Build configuration list for PBXNativeTarget "MailerLaunchTests" */;
+			buildPhases = (
+				637CDA7815A53E5F00A1BAB9 /* Sources */,
+				637CDA7915A53E5F00A1BAB9 /* Frameworks */,
+				637CDA7A15A53E5F00A1BAB9 /* Resources */,
+				637CDA7B15A53E5F00A1BAB9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				637CDA8315A53E5F00A1BAB9 /* PBXTargetDependency */,
+			);
+			name = MailerLaunchTests;
+			productName = MailerLaunchTests;
+			productReference = 637CDA7D15A53E5F00A1BAB9 /* MailerLaunchTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		637CDA5315A53E5F00A1BAB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Tangit Corp.";
+			};
+			buildConfigurationList = 637CDA5615A53E5F00A1BAB9 /* Build configuration list for PBXProject "MailerLaunch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 637CDA5115A53E5F00A1BAB9;
+			productRefGroup = 637CDA5D15A53E5F00A1BAB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				637CDA5B15A53E5F00A1BAB9 /* MailerLaunch */,
+				637CDA7C15A53E5F00A1BAB9 /* MailerLaunchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		637CDA5A15A53E5F00A1BAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CDA6B15A53E5F00A1BAB9 /* InfoPlist.strings in Resources */,
+				637CDA7415A53E5F00A1BAB9 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CDA7A15A53E5F00A1BAB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CDA8915A53E5F00A1BAB9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		637CDA7B15A53E5F00A1BAB9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		637CDA5815A53E5F00A1BAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CDA6D15A53E5F00A1BAB9 /* main.m in Sources */,
+				637CDA7115A53E5F00A1BAB9 /* AppDelegate.m in Sources */,
+				637CDA7715A53E5F00A1BAB9 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CDA7815A53E5F00A1BAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CDA8C15A53E6000A1BAB9 /* MailerLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		637CDA8315A53E5F00A1BAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637CDA5B15A53E5F00A1BAB9 /* MailerLaunch */;
+			targetProxy = 637CDA8215A53E5F00A1BAB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		637CDA6915A53E5F00A1BAB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637CDA6A15A53E5F00A1BAB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		637CDA7215A53E5F00A1BAB9 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637CDA7315A53E5F00A1BAB9 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		637CDA8715A53E5F00A1BAB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637CDA8815A53E5F00A1BAB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		637CDA8D15A53E6000A1BAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		637CDA8E15A53E6000A1BAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		637CDA9015A53E6000A1BAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailerLaunch/MailerLaunch-Prefix.pch";
+				INFOPLIST_FILE = "MailerLaunch/MailerLaunch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		637CDA9115A53E6000A1BAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailerLaunch/MailerLaunch-Prefix.pch";
+				INFOPLIST_FILE = "MailerLaunch/MailerLaunch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		637CDA9315A53E6000A1BAB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MailerLaunch.app/MailerLaunch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailerLaunch/MailerLaunch-Prefix.pch";
+				INFOPLIST_FILE = "MailerLaunchTests/MailerLaunchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		637CDA9415A53E6000A1BAB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MailerLaunch.app/MailerLaunch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailerLaunch/MailerLaunch-Prefix.pch";
+				INFOPLIST_FILE = "MailerLaunchTests/MailerLaunchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		637CDA5615A53E5F00A1BAB9 /* Build configuration list for PBXProject "MailerLaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637CDA8D15A53E6000A1BAB9 /* Debug */,
+				637CDA8E15A53E6000A1BAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637CDA8F15A53E6000A1BAB9 /* Build configuration list for PBXNativeTarget "MailerLaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637CDA9015A53E6000A1BAB9 /* Debug */,
+				637CDA9115A53E6000A1BAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		637CDA9215A53E6000A1BAB9 /* Build configuration list for PBXNativeTarget "MailerLaunchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637CDA9315A53E6000A1BAB9 /* Debug */,
+				637CDA9415A53E6000A1BAB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 637CDA5315A53E5F00A1BAB9 /* Project object */;
+}
