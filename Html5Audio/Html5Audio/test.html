@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Audioテスト</title>
+</head>
+<body>
+HTMLファイル
+<audio id="audio" preload="auto">
+	<source src="se_01.mp3" type="audio/mp3">
+	<p>音声を再生するには、audioタグをサポートしたブラウザが必要です。</p>
+</audio>
+
+<input type="button" onclick="audioPlay()" value="再生">
+<input type="button" onclick="audioPause()" value="停止">
+
+<script type='text/javascript'>
+function audioPlay(){
+    document.getElementById("audio").play();
+}
+ 
+//再生を停止
+function audioPause(){
+    document.getElementById("audio").pause();
+}
+</script>
+
+</body>
