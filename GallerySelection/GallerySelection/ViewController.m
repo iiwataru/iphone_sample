@@ -54,7 +54,6 @@ didFinishPickingMediaWithInfo:(NSDictionary*)info
                               otherButtonTitles:@"OK", nil];
         [alert show];
     }
-    
     NSLog(@"%d", imageArray.count); 
 }
 

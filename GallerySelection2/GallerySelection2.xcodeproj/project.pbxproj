@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		637E97EA15AC75DD00755FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E97E915AC75DD00755FEC /* UIKit.framework */; };
+		637E97EC15AC75DD00755FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E97EB15AC75DD00755FEC /* Foundation.framework */; };
+		637E97EE15AC75DD00755FEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E97ED15AC75DD00755FEC /* CoreGraphics.framework */; };
+		637E97F415AC75DD00755FEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 637E97F215AC75DD00755FEC /* InfoPlist.strings */; };
+		637E97F615AC75DD00755FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E97F515AC75DD00755FEC /* main.m */; };
+		637E97FA15AC75DD00755FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E97F915AC75DD00755FEC /* AppDelegate.m */; };
+		637E97FD15AC75DD00755FEC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637E97FB15AC75DD00755FEC /* MainStoryboard.storyboard */; };
+		637E980015AC75DD00755FEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E97FF15AC75DD00755FEC /* ViewController.m */; };
+		637E981B15AC763E00755FEC /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E980815AC763E00755FEC /* ELCAlbumPickerController.m */; };
+		637E981C15AC763E00755FEC /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637E980915AC763E00755FEC /* ELCAlbumPickerController.xib */; };
+		637E981D15AC763E00755FEC /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E980B15AC763E00755FEC /* ELCAsset.m */; };
+		637E981E15AC763E00755FEC /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E980D15AC763E00755FEC /* ELCAssetCell.m */; };
+		637E981F15AC763E00755FEC /* ELCAssetPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637E980E15AC763E00755FEC /* ELCAssetPicker.xib */; };
+		637E982015AC763E00755FEC /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E981015AC763E00755FEC /* ELCAssetTablePicker.m */; };
+		637E982115AC763E00755FEC /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637E981115AC763E00755FEC /* ELCAssetTablePicker.xib */; };
+		637E982215AC763E00755FEC /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E981315AC763E00755FEC /* ELCImagePickerController.m */; };
+		637E982315AC763E00755FEC /* ELCImagePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637E981415AC763E00755FEC /* ELCImagePickerController.xib */; };
+		637E982415AC763E00755FEC /* ELCImagePickerDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E981615AC763E00755FEC /* ELCImagePickerDemoAppDelegate.m */; };
+		637E982515AC763E00755FEC /* ELCImagePickerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E981815AC763E00755FEC /* ELCImagePickerDemoViewController.m */; };
+		637E982615AC763E00755FEC /* Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 637E981915AC763E00755FEC /* Overlay.png */; };
+		637E982715AC763E00755FEC /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 637E981A15AC763E00755FEC /* Overlay@2x.png */; };
+		637E982915AC775700755FEC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E982815AC775700755FEC /* AssetsLibrary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		637E97E515AC75DD00755FEC /* GallerySelection2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallerySelection2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		637E97E915AC75DD00755FEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		637E97EB15AC75DD00755FEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		637E97ED15AC75DD00755FEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		637E97F115AC75DD00755FEC /* GallerySelection2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GallerySelection2-Info.plist"; sourceTree = "<group>"; };
+		637E97F315AC75DD00755FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		637E97F515AC75DD00755FEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		637E97F715AC75DD00755FEC /* GallerySelection2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GallerySelection2-Prefix.pch"; sourceTree = "<group>"; };
+		637E97F815AC75DD00755FEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		637E97F915AC75DD00755FEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		637E97FC15AC75DD00755FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		637E97FE15AC75DD00755FEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		637E97FF15AC75DD00755FEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		637E980715AC763E00755FEC /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAlbumPickerController.h; sourceTree = "<group>"; };
+		637E980815AC763E00755FEC /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAlbumPickerController.m; sourceTree = "<group>"; };
+		637E980915AC763E00755FEC /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAlbumPickerController.xib; sourceTree = "<group>"; };
+		637E980A15AC763E00755FEC /* ELCAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAsset.h; sourceTree = "<group>"; };
+		637E980B15AC763E00755FEC /* ELCAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAsset.m; sourceTree = "<group>"; };
+		637E980C15AC763E00755FEC /* ELCAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetCell.h; sourceTree = "<group>"; };
+		637E980D15AC763E00755FEC /* ELCAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAssetCell.m; sourceTree = "<group>"; };
+		637E980E15AC763E00755FEC /* ELCAssetPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetPicker.xib; sourceTree = "<group>"; };
+		637E980F15AC763E00755FEC /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetTablePicker.h; sourceTree = "<group>"; };
+		637E981015AC763E00755FEC /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAssetTablePicker.m; sourceTree = "<group>"; };
+		637E981115AC763E00755FEC /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetTablePicker.xib; sourceTree = "<group>"; };
+		637E981215AC763E00755FEC /* ELCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
+		637E981315AC763E00755FEC /* ELCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerController.m; sourceTree = "<group>"; };
+		637E981415AC763E00755FEC /* ELCImagePickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCImagePickerController.xib; sourceTree = "<group>"; };
+		637E981515AC763E00755FEC /* ELCImagePickerDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerDemoAppDelegate.h; sourceTree = "<group>"; };
+		637E981615AC763E00755FEC /* ELCImagePickerDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerDemoAppDelegate.m; sourceTree = "<group>"; };
+		637E981715AC763E00755FEC /* ELCImagePickerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerDemoViewController.h; sourceTree = "<group>"; };
+		637E981815AC763E00755FEC /* ELCImagePickerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerDemoViewController.m; sourceTree = "<group>"; };
+		637E981915AC763E00755FEC /* Overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Overlay.png; sourceTree = "<group>"; };
+		637E981A15AC763E00755FEC /* Overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Overlay@2x.png"; sourceTree = "<group>"; };
+		637E982815AC775700755FEC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		637E97E215AC75DD00755FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637E982915AC775700755FEC /* AssetsLibrary.framework in Frameworks */,
+				637E97EA15AC75DD00755FEC /* UIKit.framework in Frameworks */,
+				637E97EC15AC75DD00755FEC /* Foundation.framework in Frameworks */,
+				637E97EE15AC75DD00755FEC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		637E97DA15AC75DD00755FEC = {
+			isa = PBXGroup;
+			children = (
+				637E982815AC775700755FEC /* AssetsLibrary.framework */,
+				637E97EF15AC75DD00755FEC /* GallerySelection2 */,
+				637E97E815AC75DD00755FEC /* Frameworks */,
+				637E97E615AC75DD00755FEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		637E97E615AC75DD00755FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				637E97E515AC75DD00755FEC /* GallerySelection2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		637E97E815AC75DD00755FEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				637E97E915AC75DD00755FEC /* UIKit.framework */,
+				637E97EB15AC75DD00755FEC /* Foundation.framework */,
+				637E97ED15AC75DD00755FEC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		637E97EF15AC75DD00755FEC /* GallerySelection2 */ = {
+			isa = PBXGroup;
+			children = (
+				637E97F815AC75DD00755FEC /* AppDelegate.h */,
+				637E97F915AC75DD00755FEC /* AppDelegate.m */,
+				637E97FB15AC75DD00755FEC /* MainStoryboard.storyboard */,
+				637E97FE15AC75DD00755FEC /* ViewController.h */,
+				637E97FF15AC75DD00755FEC /* ViewController.m */,
+				637E980615AC763E00755FEC /* Classes */,
+				637E97F015AC75DD00755FEC /* Supporting Files */,
+			);
+			path = GallerySelection2;
+			sourceTree = "<group>";
+		};
+		637E97F015AC75DD00755FEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				637E97F115AC75DD00755FEC /* GallerySelection2-Info.plist */,
+				637E97F215AC75DD00755FEC /* InfoPlist.strings */,
+				637E97F515AC75DD00755FEC /* main.m */,
+				637E97F715AC75DD00755FEC /* GallerySelection2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		637E980615AC763E00755FEC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				637E980715AC763E00755FEC /* ELCAlbumPickerController.h */,
+				637E980815AC763E00755FEC /* ELCAlbumPickerController.m */,
+				637E980915AC763E00755FEC /* ELCAlbumPickerController.xib */,
+				637E980A15AC763E00755FEC /* ELCAsset.h */,
+				637E980B15AC763E00755FEC /* ELCAsset.m */,
+				637E980C15AC763E00755FEC /* ELCAssetCell.h */,
+				637E980D15AC763E00755FEC /* ELCAssetCell.m */,
+				637E980E15AC763E00755FEC /* ELCAssetPicker.xib */,
+				637E980F15AC763E00755FEC /* ELCAssetTablePicker.h */,
+				637E981015AC763E00755FEC /* ELCAssetTablePicker.m */,
+				637E981115AC763E00755FEC /* ELCAssetTablePicker.xib */,
+				637E981215AC763E00755FEC /* ELCImagePickerController.h */,
+				637E981315AC763E00755FEC /* ELCImagePickerController.m */,
+				637E981415AC763E00755FEC /* ELCImagePickerController.xib */,
+				637E981515AC763E00755FEC /* ELCImagePickerDemoAppDelegate.h */,
+				637E981615AC763E00755FEC /* ELCImagePickerDemoAppDelegate.m */,
+				637E981715AC763E00755FEC /* ELCImagePickerDemoViewController.h */,
+				637E981815AC763E00755FEC /* ELCImagePickerDemoViewController.m */,
+				637E981915AC763E00755FEC /* Overlay.png */,
+				637E981A15AC763E00755FEC /* Overlay@2x.png */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		637E97E415AC75DD00755FEC /* GallerySelection2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637E980315AC75DD00755FEC /* Build configuration list for PBXNativeTarget "GallerySelection2" */;
+			buildPhases = (
+				637E97E115AC75DD00755FEC /* Sources */,
+				637E97E215AC75DD00755FEC /* Frameworks */,
+				637E97E315AC75DD00755FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GallerySelection2;
+			productName = GallerySelection2;
+			productReference = 637E97E515AC75DD00755FEC /* GallerySelection2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		637E97DC15AC75DD00755FEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Tangit Corp.";
+			};
+			buildConfigurationList = 637E97DF15AC75DD00755FEC /* Build configuration list for PBXProject "GallerySelection2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 637E97DA15AC75DD00755FEC;
+			productRefGroup = 637E97E615AC75DD00755FEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				637E97E415AC75DD00755FEC /* GallerySelection2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		637E97E315AC75DD00755FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637E97F415AC75DD00755FEC /* InfoPlist.strings in Resources */,
+				637E97FD15AC75DD00755FEC /* MainStoryboard.storyboard in Resources */,
+				637E981C15AC763E00755FEC /* ELCAlbumPickerController.xib in Resources */,
+				637E981F15AC763E00755FEC /* ELCAssetPicker.xib in Resources */,
+				637E982115AC763E00755FEC /* ELCAssetTablePicker.xib in Resources */,
+				637E982315AC763E00755FEC /* ELCImagePickerController.xib in Resources */,
+				637E982615AC763E00755FEC /* Overlay.png in Resources */,
+				637E982715AC763E00755FEC /* Overlay@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		637E97E115AC75DD00755FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637E97F615AC75DD00755FEC /* main.m in Sources */,
+				637E97FA15AC75DD00755FEC /* AppDelegate.m in Sources */,
+				637E980015AC75DD00755FEC /* ViewController.m in Sources */,
+				637E981B15AC763E00755FEC /* ELCAlbumPickerController.m in Sources */,
+				637E981D15AC763E00755FEC /* ELCAsset.m in Sources */,
+				637E981E15AC763E00755FEC /* ELCAssetCell.m in Sources */,
+				637E982015AC763E00755FEC /* ELCAssetTablePicker.m in Sources */,
+				637E982215AC763E00755FEC /* ELCImagePickerController.m in Sources */,
+				637E982415AC763E00755FEC /* ELCImagePickerDemoAppDelegate.m in Sources */,
+				637E982515AC763E00755FEC /* ELCImagePickerDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		637E97F215AC75DD00755FEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637E97F315AC75DD00755FEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		637E97FB15AC75DD00755FEC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637E97FC15AC75DD00755FEC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		637E980115AC75DD00755FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		637E980215AC75DD00755FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		637E980415AC75DD00755FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GallerySelection2/GallerySelection2-Prefix.pch";
+				INFOPLIST_FILE = "GallerySelection2/GallerySelection2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		637E980515AC75DD00755FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GallerySelection2/GallerySelection2-Prefix.pch";
+				INFOPLIST_FILE = "GallerySelection2/GallerySelection2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		637E97DF15AC75DD00755FEC /* Build configuration list for PBXProject "GallerySelection2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637E980115AC75DD00755FEC /* Debug */,
+				637E980215AC75DD00755FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637E980315AC75DD00755FEC /* Build configuration list for PBXNativeTarget "GallerySelection2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637E980415AC75DD00755FEC /* Debug */,
+				637E980515AC75DD00755FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 637E97DC15AC75DD00755FEC /* Project object */;
+}
