@@ -40,4 +40,11 @@
 - (IBAction)buttonDisable:(id)sender {
     buttonTarget.enabled = NO; // ボタン無効
 }
+- (IBAction)buttonShow:(id)sender {
+    buttonTarget.hidden = NO;
+}
+
+- (IBAction)buttonHide:(id)sender {
+    buttonTarget.hidden = YES;
+}
 @end

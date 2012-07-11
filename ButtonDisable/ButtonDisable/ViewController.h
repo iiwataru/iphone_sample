@@ -10,7 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonTarget;
+
 - (IBAction)buttonEnable:(id)sender;
 - (IBAction)buttonDisable:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *buttonTarget;
+- (IBAction)buttonShow:(id)sender;
+- (IBAction)buttonHide:(id)sender;
+
 @end
