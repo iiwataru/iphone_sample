@@ -22,8 +22,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    // 初期化
-    [UserDefaults initialize];
+    // 既に設定されている値を表示
+    [lb setText: (NSString *)[UserDefaults get:@"USER_ID"]];
 }
 
 - (void)viewDidUnload

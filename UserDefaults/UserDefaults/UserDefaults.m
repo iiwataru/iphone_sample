@@ -31,7 +31,7 @@ static NSArray *keys = nil;
             [appDefaults setObject:@"" forKey:key];
         }
         NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
-        [def registerDefaults:appDefaults];
+        [def registerDefaults:appDefaults];// 既に値が入っていれば上書きされない
     }
 }
 
@@ -40,6 +40,8 @@ static NSArray *keys = nil;
  */
 + (void)set:(NSString *)key value:(NSString *)value
 {
+    [self initialize];
+    
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     if ([keys containsObject:key]) {
         [def setObject:value forKey:key];
@@ -52,6 +54,8 @@ static NSArray *keys = nil;
  */
 + (NSString *)get:(NSString *)key
 {
+    [self initialize];
+    
     NSString *ret = @"";
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     if ([keys containsObject:key]) {
