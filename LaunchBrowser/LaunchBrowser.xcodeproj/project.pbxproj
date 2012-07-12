@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		637E99A915AED3BA00755FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E99A815AED3BA00755FEC /* UIKit.framework */; };
+		637E99AB15AED3BA00755FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E99AA15AED3BA00755FEC /* Foundation.framework */; };
+		637E99AD15AED3BA00755FEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E99AC15AED3BA00755FEC /* CoreGraphics.framework */; };
+		637E99B315AED3BA00755FEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 637E99B115AED3BA00755FEC /* InfoPlist.strings */; };
+		637E99B515AED3BA00755FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E99B415AED3BA00755FEC /* main.m */; };
+		637E99B915AED3BA00755FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637E99B815AED3BA00755FEC /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		637E99A415AED3BA00755FEC /* LaunchBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		637E99A815AED3BA00755FEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		637E99AA15AED3BA00755FEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		637E99AC15AED3BA00755FEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		637E99B015AED3BA00755FEC /* LaunchBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaunchBrowser-Info.plist"; sourceTree = "<group>"; };
+		637E99B215AED3BA00755FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		637E99B415AED3BA00755FEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		637E99B615AED3BA00755FEC /* LaunchBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaunchBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		637E99B715AED3BA00755FEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		637E99B815AED3BA00755FEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		637E99A115AED3BA00755FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637E99A915AED3BA00755FEC /* UIKit.framework in Frameworks */,
+				637E99AB15AED3BA00755FEC /* Foundation.framework in Frameworks */,
+				637E99AD15AED3BA00755FEC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		637E999915AED3BA00755FEC = {
+			isa = PBXGroup;
+			children = (
+				637E99AE15AED3BA00755FEC /* LaunchBrowser */,
+				637E99A715AED3BA00755FEC /* Frameworks */,
+				637E99A515AED3BA00755FEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		637E99A515AED3BA00755FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				637E99A415AED3BA00755FEC /* LaunchBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		637E99A715AED3BA00755FEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				637E99A815AED3BA00755FEC /* UIKit.framework */,
+				637E99AA15AED3BA00755FEC /* Foundation.framework */,
+				637E99AC15AED3BA00755FEC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		637E99AE15AED3BA00755FEC /* LaunchBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				637E99B715AED3BA00755FEC /* AppDelegate.h */,
+				637E99B815AED3BA00755FEC /* AppDelegate.m */,
+				637E99AF15AED3BA00755FEC /* Supporting Files */,
+			);
+			path = LaunchBrowser;
+			sourceTree = "<group>";
+		};
+		637E99AF15AED3BA00755FEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				637E99B015AED3BA00755FEC /* LaunchBrowser-Info.plist */,
+				637E99B115AED3BA00755FEC /* InfoPlist.strings */,
+				637E99B415AED3BA00755FEC /* main.m */,
+				637E99B615AED3BA00755FEC /* LaunchBrowser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		637E99A315AED3BA00755FEC /* LaunchBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637E99BC15AED3BA00755FEC /* Build configuration list for PBXNativeTarget "LaunchBrowser" */;
+			buildPhases = (
+				637E99A015AED3BA00755FEC /* Sources */,
+				637E99A115AED3BA00755FEC /* Frameworks */,
+				637E99A215AED3BA00755FEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaunchBrowser;
+			productName = LaunchBrowser;
+			productReference = 637E99A415AED3BA00755FEC /* LaunchBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		637E999B15AED3BA00755FEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Tangit Corp.";
+			};
+			buildConfigurationList = 637E999E15AED3BA00755FEC /* Build configuration list for PBXProject "LaunchBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 637E999915AED3BA00755FEC;
+			productRefGroup = 637E99A515AED3BA00755FEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				637E99A315AED3BA00755FEC /* LaunchBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		637E99A215AED3BA00755FEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637E99B315AED3BA00755FEC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		637E99A015AED3BA00755FEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637E99B515AED3BA00755FEC /* main.m in Sources */,
+				637E99B915AED3BA00755FEC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		637E99B115AED3BA00755FEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637E99B215AED3BA00755FEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		637E99BA15AED3BA00755FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		637E99BB15AED3BA00755FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		637E99BD15AED3BA00755FEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaunchBrowser/LaunchBrowser-Prefix.pch";
+				INFOPLIST_FILE = "LaunchBrowser/LaunchBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		637E99BE15AED3BA00755FEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaunchBrowser/LaunchBrowser-Prefix.pch";
+				INFOPLIST_FILE = "LaunchBrowser/LaunchBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		637E999E15AED3BA00755FEC /* Build configuration list for PBXProject "LaunchBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637E99BA15AED3BA00755FEC /* Debug */,
+				637E99BB15AED3BA00755FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637E99BC15AED3BA00755FEC /* Build configuration list for PBXNativeTarget "LaunchBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637E99BD15AED3BA00755FEC /* Debug */,
+				637E99BE15AED3BA00755FEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 637E999B15AED3BA00755FEC /* Project object */;
+}
