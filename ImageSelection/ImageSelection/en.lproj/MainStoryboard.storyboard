@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" image="hana_himawari.jpeg" id="YBt-wX-tK7" customClass="TouchUIImageVIew">
+                                <rect key="frame" x="20" y="20" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="yasai_aiko.jpeg" id="SqK-Mt-Su4" customClass="TouchUIImageVIew">
+                                <rect key="frame" x="120" y="20" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="yasai_aiko_kiiro.jpeg" id="gix-wn-Bpb" customClass="TouchUIImageVIew">
+                                <rect key="frame" x="220" y="20" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="yasai_aiko_midori.jpeg" id="H4q-wf-Xav" customClass="TouchUIImageVIew">
+                                <rect key="frame" x="20" y="122" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="yasai_hatukadaikon.jpeg" id="kev-uv-6Wx" customClass="TouchUIImageVIew">
+                                <rect key="frame" x="120" y="122" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="yasai_jagaimo.jpeg" id="XIx-jr-TSt" customClass="TouchUIImageVIew">
+                                <rect key="frame" x="220" y="122" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="yasai_aiko.jpeg" id="cBs-yx-nVG">
+                                <rect key="frame" x="100" y="320" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="selectImage1" destination="YBt-wX-tK7" id="Jsu-Hg-cjz"/>
+                        <outlet property="selectImage2" destination="SqK-Mt-Su4" id="FHC-LR-Nga"/>
+                        <outlet property="selectImage3" destination="gix-wn-Bpb" id="WmE-86-P1b"/>
+                        <outlet property="selectImage4" destination="H4q-wf-Xav" id="fek-n0-omp"/>
+                        <outlet property="selectImage5" destination="kev-uv-6Wx" id="y9E-nB-ty3"/>
+                        <outlet property="selectImage6" destination="XIx-jr-TSt" id="Yva-Lw-ceD"/>
+                        <outlet property="testview" destination="cBs-yx-nVG" id="mqQ-eX-dPr"/>
+                    </connections>
+                </viewController>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hana_himawari.jpeg" width="259" height="194"/>
+        <image name="yasai_aiko.jpeg" width="238" height="212"/>
+        <image name="yasai_aiko_kiiro.jpeg" width="259" height="194"/>
+        <image name="yasai_aiko_midori.jpeg" width="259" height="194"/>
+        <image name="yasai_hatukadaikon.jpeg" width="259" height="194"/>
+        <image name="yasai_jagaimo.jpeg" width="275" height="183"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
