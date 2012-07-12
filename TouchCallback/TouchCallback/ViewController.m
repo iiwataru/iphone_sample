@@ -20,6 +20,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    // 子を追加　コールバック指定
     TouchView *tv = [[TouchView alloc] initWithFrame:self.view.frame];
     [tv setCallback:self cb:@selector(touchCallback:)];
     [self.view addSubview:tv];
@@ -37,6 +38,9 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+/**
+ * 子から呼ばれるコールバック
+ */
 - (void)touchCallback:(TouchView *)tv
 {
     NSLog(@"touchCallback");

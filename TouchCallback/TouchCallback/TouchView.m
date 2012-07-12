@@ -33,17 +33,26 @@
 }
 */
 
+/**
+ * タッチ時
+ */
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     NSLog(@"TouchView touchesBegan");
     [self caller:caller callback:callback];
 }
 
+/**
+ * コールバック指定
+ */
 - (void)setCallback:(id)cl cb:(SEL)cb
 {
     caller = cl;
     callback = cb;
 }
 
+/**
+ * コールバック実行
+ */
 - (void) caller:(id) target callback:(SEL) callback{
     NSLog(@"TouchView caller");
     NSInvocation* invoker = [NSInvocation invocationWithMethodSignature:[target methodSignatureForSelector:callback]];
@@ -53,6 +62,9 @@
     [invoker invoke];
 }
 
+/**
+ * 順番指定（親から呼ばれる想定）
+ */
 - (void)setNumber:(NSInteger)i
 {
     NSLog(@"TouchView setNumberImage - %d",i);
