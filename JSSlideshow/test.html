@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Slideshow|Test</title>
+    </head>
+    <body>
+        <img src="1.jpeg" id="slideshow" alt="slideshow_area">
+    </body>
+</html>
+
+<script>
+    var image_count = 2;
+    var image_count_sum = 5;
+    var timer;
+    
+    function show_image(num) {
+        var image_name = num + ".jpeg";
+        document.getElementById('slideshow').src = image_name;
+    }
+    
+    function slide_image() {
+        show_image(image_count);
+        image_count = image_count % image_count_sum + 1;
+    }
+    
+    function start_timer() {
+        clearInterval(timer);
+        timer = setInterval("slide_image()",1500);
+    }
+</script>
