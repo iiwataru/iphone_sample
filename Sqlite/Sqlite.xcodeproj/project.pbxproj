@@ -22,8 +22,6 @@
 		637CDA2F15A4F7A000A1BAB9 /* SqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA2E15A4F7A000A1BAB9 /* SqliteTests.m */; };
 		637CDA4515A4FAD700A1BAB9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA3B15A4FAD700A1BAB9 /* FMDatabase.m */; };
 		637CDA4615A4FAD700A1BAB9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA3D15A4FAD700A1BAB9 /* FMDatabaseAdditions.m */; };
-		637CDA4715A4FAD700A1BAB9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA3F15A4FAD700A1BAB9 /* FMDatabasePool.m */; };
-		637CDA4815A4FAD700A1BAB9 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA4115A4FAD700A1BAB9 /* FMDatabaseQueue.m */; };
 		637CDA4A15A4FAD700A1BAB9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CDA4415A4FAD700A1BAB9 /* FMResultSet.m */; };
 		637CDA4C15A4FC0D00A1BAB9 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 637CDA4B15A4FC0D00A1BAB9 /* db.sqlite */; };
 		637CDA5015A5039500A1BAB9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CDA4F15A5039500A1BAB9 /* libsqlite3.0.dylib */; };
@@ -63,10 +61,6 @@
 		637CDA3B15A4FAD700A1BAB9 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		637CDA3C15A4FAD700A1BAB9 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		637CDA3D15A4FAD700A1BAB9 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		637CDA3E15A4FAD700A1BAB9 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		637CDA3F15A4FAD700A1BAB9 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		637CDA4015A4FAD700A1BAB9 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		637CDA4115A4FAD700A1BAB9 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		637CDA4315A4FAD700A1BAB9 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		637CDA4415A4FAD700A1BAB9 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		637CDA4B15A4FC0D00A1BAB9 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
@@ -125,10 +119,6 @@
 				637CDA3B15A4FAD700A1BAB9 /* FMDatabase.m */,
 				637CDA3C15A4FAD700A1BAB9 /* FMDatabaseAdditions.h */,
 				637CDA3D15A4FAD700A1BAB9 /* FMDatabaseAdditions.m */,
-				637CDA3E15A4FAD700A1BAB9 /* FMDatabasePool.h */,
-				637CDA3F15A4FAD700A1BAB9 /* FMDatabasePool.m */,
-				637CDA4015A4FAD700A1BAB9 /* FMDatabaseQueue.h */,
-				637CDA4115A4FAD700A1BAB9 /* FMDatabaseQueue.m */,
 				637CDA4315A4FAD700A1BAB9 /* FMResultSet.h */,
 				637CDA4415A4FAD700A1BAB9 /* FMResultSet.m */,
 				637CDA0315A4F7A000A1BAB9 /* UIKit.framework */,
@@ -296,8 +286,6 @@
 				637CDA1A15A4F7A000A1BAB9 /* ViewController.m in Sources */,
 				637CDA4515A4FAD700A1BAB9 /* FMDatabase.m in Sources */,
 				637CDA4615A4FAD700A1BAB9 /* FMDatabaseAdditions.m in Sources */,
-				637CDA4715A4FAD700A1BAB9 /* FMDatabasePool.m in Sources */,
-				637CDA4815A4FAD700A1BAB9 /* FMDatabaseQueue.m in Sources */,
 				637CDA4A15A4FAD700A1BAB9 /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +464,7 @@
 				637CDA3415A4F7A000A1BAB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		637CDA3515A4F7A000A1BAB9 /* Build configuration list for PBXNativeTarget "SqliteTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +473,7 @@
 				637CDA3715A4F7A000A1BAB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

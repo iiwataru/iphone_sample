@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63B3BF2C15B3A0B5001D4946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B3BF2B15B3A0B5001D4946 /* UIKit.framework */; };
+		63B3BF2E15B3A0B5001D4946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B3BF2D15B3A0B5001D4946 /* Foundation.framework */; };
+		63B3BF3015B3A0B5001D4946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B3BF2F15B3A0B5001D4946 /* CoreGraphics.framework */; };
+		63B3BF3615B3A0B5001D4946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63B3BF3415B3A0B5001D4946 /* InfoPlist.strings */; };
+		63B3BF3815B3A0B5001D4946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF3715B3A0B5001D4946 /* main.m */; };
+		63B3BF3C15B3A0B5001D4946 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF3B15B3A0B5001D4946 /* AppDelegate.m */; };
+		63B3BF3F15B3A0B5001D4946 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B3BF3D15B3A0B5001D4946 /* MainStoryboard.storyboard */; };
+		63B3BF4215B3A0B5001D4946 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF4115B3A0B5001D4946 /* MainViewController.m */; };
+		63B3BF5615B3A196001D4946 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF4D15B3A196001D4946 /* FMDatabase.m */; };
+		63B3BF5715B3A196001D4946 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF4F15B3A196001D4946 /* FMDatabaseAdditions.m */; };
+		63B3BF5815B3A196001D4946 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF5115B3A196001D4946 /* FMDatabasePool.m */; };
+		63B3BF5915B3A196001D4946 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF5315B3A196001D4946 /* FMDatabaseQueue.m */; };
+		63B3BF5A15B3A196001D4946 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF5515B3A196001D4946 /* FMResultSet.m */; };
+		63B3BF5C15B3A1A8001D4946 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B3BF5B15B3A1A8001D4946 /* libsqlite3.0.dylib */; };
+		63B3BF5F15B3A3F7001D4946 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63B3BF5D15B3A3F7001D4946 /* Localizable.strings */; };
+		63B3BF6415B3A55B001D4946 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63B3BF6215B3A55B001D4946 /* Localizable.strings */; };
+		63B3BF6B15B3A876001D4946 /* EditTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF6A15B3A876001D4946 /* EditTagViewController.m */; };
+		63B3BF6E15B3AB5F001D4946 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF6D15B3AB5F001D4946 /* Tag.m */; };
+		63B3BF7015B3ADED001D4946 /* EditTagStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B3BF6F15B3ADED001D4946 /* EditTagStoryboard.storyboard */; };
+		63B3BF7315B3B5BB001D4946 /* DaoTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF7215B3B5BB001D4946 /* DaoTags.m */; };
+		63B3BF7615B3B5DD001D4946 /* Dao.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3BF7515B3B5DD001D4946 /* Dao.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63B3BF2715B3A0B5001D4946 /* Sqlite2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sqlite2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B3BF2B15B3A0B5001D4946 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63B3BF2D15B3A0B5001D4946 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63B3BF2F15B3A0B5001D4946 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63B3BF3315B3A0B5001D4946 /* Sqlite2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sqlite2-Info.plist"; sourceTree = "<group>"; };
+		63B3BF3515B3A0B5001D4946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63B3BF3715B3A0B5001D4946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63B3BF3915B3A0B5001D4946 /* Sqlite2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sqlite2-Prefix.pch"; sourceTree = "<group>"; };
+		63B3BF3A15B3A0B5001D4946 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63B3BF3B15B3A0B5001D4946 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63B3BF3E15B3A0B5001D4946 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		63B3BF4015B3A0B5001D4946 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Sqlite2/MainViewController.h; sourceTree = "<group>"; };
+		63B3BF4115B3A0B5001D4946 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Sqlite2/MainViewController.m; sourceTree = "<group>"; };
+		63B3BF4C15B3A196001D4946 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = Sqlite2/lib/FMDB/FMDatabase.h; sourceTree = "<group>"; };
+		63B3BF4D15B3A196001D4946 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = Sqlite2/lib/FMDB/FMDatabase.m; sourceTree = "<group>"; };
+		63B3BF4E15B3A196001D4946 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = Sqlite2/lib/FMDB/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		63B3BF4F15B3A196001D4946 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = Sqlite2/lib/FMDB/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		63B3BF5015B3A196001D4946 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = Sqlite2/lib/FMDB/FMDatabasePool.h; sourceTree = "<group>"; };
+		63B3BF5115B3A196001D4946 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = Sqlite2/lib/FMDB/FMDatabasePool.m; sourceTree = "<group>"; };
+		63B3BF5215B3A196001D4946 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = Sqlite2/lib/FMDB/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		63B3BF5315B3A196001D4946 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = Sqlite2/lib/FMDB/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		63B3BF5415B3A196001D4946 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = Sqlite2/lib/FMDB/FMResultSet.h; sourceTree = "<group>"; };
+		63B3BF5515B3A196001D4946 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = Sqlite2/lib/FMDB/FMResultSet.m; sourceTree = "<group>"; };
+		63B3BF5B15B3A1A8001D4946 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		63B3BF6315B3A55B001D4946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63B3BF6515B3A570001D4946 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63B3BF6915B3A876001D4946 /* EditTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditTagViewController.h; path = Sqlite2/EditTagViewController.h; sourceTree = "<group>"; };
+		63B3BF6A15B3A876001D4946 /* EditTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditTagViewController.m; path = Sqlite2/EditTagViewController.m; sourceTree = "<group>"; };
+		63B3BF6C15B3AB5F001D4946 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = Sqlite2/Tag.h; sourceTree = "<group>"; };
+		63B3BF6D15B3AB5F001D4946 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = Sqlite2/Tag.m; sourceTree = "<group>"; };
+		63B3BF6F15B3ADED001D4946 /* EditTagStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EditTagStoryboard.storyboard; path = Sqlite2/EditTagStoryboard.storyboard; sourceTree = "<group>"; };
+		63B3BF7115B3B5BB001D4946 /* DaoTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DaoTags.h; path = Sqlite2/DaoTags.h; sourceTree = "<group>"; };
+		63B3BF7215B3B5BB001D4946 /* DaoTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DaoTags.m; path = Sqlite2/DaoTags.m; sourceTree = "<group>"; };
+		63B3BF7415B3B5DD001D4946 /* Dao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dao.h; path = Sqlite2/Dao.h; sourceTree = "<group>"; };
+		63B3BF7515B3B5DD001D4946 /* Dao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dao.m; path = Sqlite2/Dao.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63B3BF2415B3A0B5001D4946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B3BF5C15B3A1A8001D4946 /* libsqlite3.0.dylib in Frameworks */,
+				63B3BF2C15B3A0B5001D4946 /* UIKit.framework in Frameworks */,
+				63B3BF2E15B3A0B5001D4946 /* Foundation.framework in Frameworks */,
+				63B3BF3015B3A0B5001D4946 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63B3BF1C15B3A0B5001D4946 = {
+			isa = PBXGroup;
+			children = (
+				63B3BF3115B3A0B5001D4946 /* Sqlite2 */,
+				63B3BF2A15B3A0B5001D4946 /* Frameworks */,
+				63B3BF2815B3A0B5001D4946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63B3BF2815B3A0B5001D4946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63B3BF2715B3A0B5001D4946 /* Sqlite2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63B3BF2A15B3A0B5001D4946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63B3BF5B15B3A1A8001D4946 /* libsqlite3.0.dylib */,
+				63B3BF2B15B3A0B5001D4946 /* UIKit.framework */,
+				63B3BF2D15B3A0B5001D4946 /* Foundation.framework */,
+				63B3BF2F15B3A0B5001D4946 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63B3BF3115B3A0B5001D4946 /* Sqlite2 */ = {
+			isa = PBXGroup;
+			children = (
+				63B3BF4815B3A0C1001D4946 /* Models */,
+				63B3BF4915B3A0C7001D4946 /* Views & Controllers */,
+				63B3BF3A15B3A0B5001D4946 /* AppDelegate.h */,
+				63B3BF3B15B3A0B5001D4946 /* AppDelegate.m */,
+				63B3BF4A15B3A0DF001D4946 /* Libraries */,
+				63B3BF3215B3A0B5001D4946 /* Supporting Files */,
+			);
+			path = Sqlite2;
+			sourceTree = "<group>";
+		};
+		63B3BF3215B3A0B5001D4946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63B3BF6215B3A55B001D4946 /* Localizable.strings */,
+				63B3BF3315B3A0B5001D4946 /* Sqlite2-Info.plist */,
+				63B3BF3415B3A0B5001D4946 /* InfoPlist.strings */,
+				63B3BF3715B3A0B5001D4946 /* main.m */,
+				63B3BF3915B3A0B5001D4946 /* Sqlite2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63B3BF4815B3A0C1001D4946 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63B3BF6C15B3AB5F001D4946 /* Tag.h */,
+				63B3BF6D15B3AB5F001D4946 /* Tag.m */,
+				63B3BF7115B3B5BB001D4946 /* DaoTags.h */,
+				63B3BF7215B3B5BB001D4946 /* DaoTags.m */,
+				63B3BF7415B3B5DD001D4946 /* Dao.h */,
+				63B3BF7515B3B5DD001D4946 /* Dao.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		63B3BF4915B3A0C7001D4946 /* Views & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63B3BF3D15B3A0B5001D4946 /* MainStoryboard.storyboard */,
+				63B3BF4015B3A0B5001D4946 /* MainViewController.h */,
+				63B3BF4115B3A0B5001D4946 /* MainViewController.m */,
+				63B3BF6915B3A876001D4946 /* EditTagViewController.h */,
+				63B3BF6A15B3A876001D4946 /* EditTagViewController.m */,
+				63B3BF6F15B3ADED001D4946 /* EditTagStoryboard.storyboard */,
+			);
+			name = "Views & Controllers";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		63B3BF4A15B3A0DF001D4946 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				63B3BF4B15B3A0EB001D4946 /* FMDB */,
+			);
+			name = Libraries;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		63B3BF4B15B3A0EB001D4946 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				63B3BF4C15B3A196001D4946 /* FMDatabase.h */,
+				63B3BF4D15B3A196001D4946 /* FMDatabase.m */,
+				63B3BF4E15B3A196001D4946 /* FMDatabaseAdditions.h */,
+				63B3BF4F15B3A196001D4946 /* FMDatabaseAdditions.m */,
+				63B3BF5015B3A196001D4946 /* FMDatabasePool.h */,
+				63B3BF5115B3A196001D4946 /* FMDatabasePool.m */,
+				63B3BF5215B3A196001D4946 /* FMDatabaseQueue.h */,
+				63B3BF5315B3A196001D4946 /* FMDatabaseQueue.m */,
+				63B3BF5415B3A196001D4946 /* FMResultSet.h */,
+				63B3BF5515B3A196001D4946 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63B3BF2615B3A0B5001D4946 /* Sqlite2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B3BF4515B3A0B5001D4946 /* Build configuration list for PBXNativeTarget "Sqlite2" */;
+			buildPhases = (
+				63B3BF2315B3A0B5001D4946 /* Sources */,
+				63B3BF2415B3A0B5001D4946 /* Frameworks */,
+				63B3BF2515B3A0B5001D4946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sqlite2;
+			productName = Sqlite2;
+			productReference = 63B3BF2715B3A0B5001D4946 /* Sqlite2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63B3BF1E15B3A0B5001D4946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Tangit Corp.";
+			};
+			buildConfigurationList = 63B3BF2115B3A0B5001D4946 /* Build configuration list for PBXProject "Sqlite2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+			);
+			mainGroup = 63B3BF1C15B3A0B5001D4946;
+			productRefGroup = 63B3BF2815B3A0B5001D4946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63B3BF2615B3A0B5001D4946 /* Sqlite2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63B3BF2515B3A0B5001D4946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B3BF3615B3A0B5001D4946 /* InfoPlist.strings in Resources */,
+				63B3BF3F15B3A0B5001D4946 /* MainStoryboard.storyboard in Resources */,
+				63B3BF5F15B3A3F7001D4946 /* Localizable.strings in Resources */,
+				63B3BF6415B3A55B001D4946 /* Localizable.strings in Resources */,
+				63B3BF7015B3ADED001D4946 /* EditTagStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63B3BF2315B3A0B5001D4946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B3BF3815B3A0B5001D4946 /* main.m in Sources */,
+				63B3BF3C15B3A0B5001D4946 /* AppDelegate.m in Sources */,
+				63B3BF4215B3A0B5001D4946 /* MainViewController.m in Sources */,
+				63B3BF5615B3A196001D4946 /* FMDatabase.m in Sources */,
+				63B3BF5715B3A196001D4946 /* FMDatabaseAdditions.m in Sources */,
+				63B3BF5815B3A196001D4946 /* FMDatabasePool.m in Sources */,
+				63B3BF5915B3A196001D4946 /* FMDatabaseQueue.m in Sources */,
+				63B3BF5A15B3A196001D4946 /* FMResultSet.m in Sources */,
+				63B3BF6B15B3A876001D4946 /* EditTagViewController.m in Sources */,
+				63B3BF6E15B3AB5F001D4946 /* Tag.m in Sources */,
+				63B3BF7315B3B5BB001D4946 /* DaoTags.m in Sources */,
+				63B3BF7615B3B5DD001D4946 /* Dao.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63B3BF3415B3A0B5001D4946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B3BF3515B3A0B5001D4946 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63B3BF3D15B3A0B5001D4946 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B3BF3E15B3A0B5001D4946 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			path = Sqlite2;
+			sourceTree = "<group>";
+		};
+		63B3BF5D15B3A3F7001D4946 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+			);
+			name = Localizable.strings;
+			path = /Users/wataru/Documents/sample/iphone_sample/Sqlite2/Sqlite2;
+			sourceTree = "<absolute>";
+		};
+		63B3BF6215B3A55B001D4946 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B3BF6315B3A55B001D4946 /* en */,
+				63B3BF6515B3A570001D4946 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63B3BF4315B3A0B5001D4946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		63B3BF4415B3A0B5001D4946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63B3BF4615B3A0B5001D4946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sqlite2/Sqlite2-Prefix.pch";
+				INFOPLIST_FILE = "Sqlite2/Sqlite2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63B3BF4715B3A0B5001D4946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sqlite2/Sqlite2-Prefix.pch";
+				INFOPLIST_FILE = "Sqlite2/Sqlite2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63B3BF2115B3A0B5001D4946 /* Build configuration list for PBXProject "Sqlite2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B3BF4315B3A0B5001D4946 /* Debug */,
+				63B3BF4415B3A0B5001D4946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B3BF4515B3A0B5001D4946 /* Build configuration list for PBXNativeTarget "Sqlite2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B3BF4615B3A0B5001D4946 /* Debug */,
+				63B3BF4715B3A0B5001D4946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63B3BF1E15B3A0B5001D4946 /* Project object */;
+}
