@@ -46,6 +46,9 @@ NSMutableArray *listOfTags;
     [listOfTags addObject:@"tag O"];
     [listOfTags addObject:@"tag P"];
     
+    // 選択タグリスト初期化
+    selectedTags = [[NSMutableArray alloc] init];
+    
     // タグ表示更新
     [self refreshTags];
 }
@@ -63,6 +66,19 @@ NSMutableArray *listOfTags;
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (NSInteger)numberOfSections {
+    return 1; // セクションは1個とします
+}
+
+/**
+ * セクションヘッダ
+ */
+- (NSString *)tableView:(UITableView *)tableView 
+titleForHeaderInSection:(NSInteger)section
+{
+    return @"Tags";
+}
+
 /**
  * セルの数
  */
@@ -73,13 +89,13 @@ numberOfRowsInSection:(NSInteger)section
 }
 
 /**
- * セルの初期化
+ * セルの表示内容
  */
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    static NSString *CellIdentifier = @"Cell";
+//    static NSString *CellIdentifier = @"Cell";
+    NSString *CellIdentifier = [NSString stringWithFormat:@"Cell-%d", indexPath.row];
     
     UITableViewCell *cell = [tableView 
                              dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -96,15 +112,6 @@ numberOfRowsInSection:(NSInteger)section
 }
 
 /**
- * ヘッダ
- */
-- (NSString *)tableView:(UITableView *)tableView 
-    titleForHeaderInSection:(NSInteger)section
-{
-    return @"Tags";
-}
-
-/**
  * セル選択時
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -114,14 +121,17 @@ numberOfRowsInSection:(NSInteger)section
     
 	//選択されたセルを取得
 	UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
 	//セルにチェックが付いている場合はチェックを外し、付いていない場合はチェックを付ける
 	if (cell.accessoryType == UITableViewCellAccessoryCheckmark)
 	{
 		cell.accessoryType = UITableViewCellAccessoryNone;
+        [selectedTags removeObject:cell.textLabel.text];
 	}
 	else
 	{
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [selectedTags addObject:cell.textLabel.text];
 	}
     
     // タグ表示更新
@@ -133,22 +143,10 @@ numberOfRowsInSection:(NSInteger)section
  */
 - (void)refreshTags
 {
-    NSMutableArray *tags = [[NSMutableArray alloc] init];
-    
-    //１行目から順にセルを取得していく
-    for (int i = 0; i < [listOfTags count]; i++) {
-        NSIndexPath *index = [NSIndexPath indexPathForRow:i inSection:0];
-        UITableViewCell *cell = [table cellForRowAtIndexPath:index];
-        
-        if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
-            [tags addObject:cell.textLabel.text];
-        }
-    }
-    
     // チェックされたタグを文字列に出力
     NSString *tagString = [NSString stringWithCString:"" encoding:NSUTF8StringEncoding];
     NSString *tag;
-    for (tag in tags) {
+    for (tag in selectedTags) {
         if (![tagString isEqualToString:@""]) {
             tagString = [NSString stringWithFormat:@"%@%@", tagString, @", "];
         }

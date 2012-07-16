@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NSMutableArray* selectedTags;
+
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
