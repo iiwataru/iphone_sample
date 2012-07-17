@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2ABFB4715AFFAA4005E1D0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ABFB4615AFFAA4005E1D0E /* UIKit.framework */; };
+		A2ABFB4915AFFAA4005E1D0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ABFB4815AFFAA4005E1D0E /* Foundation.framework */; };
+		A2ABFB4B15AFFAA4005E1D0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ABFB4A15AFFAA4005E1D0E /* CoreGraphics.framework */; };
+		A2ABFB5115AFFAA4005E1D0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2ABFB4F15AFFAA4005E1D0E /* InfoPlist.strings */; };
+		A2ABFB5315AFFAA4005E1D0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ABFB5215AFFAA4005E1D0E /* main.m */; };
+		A2ABFB5715AFFAA4005E1D0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ABFB5615AFFAA4005E1D0E /* AppDelegate.m */; };
+		A2ABFB5A15AFFAA4005E1D0E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2ABFB5815AFFAA4005E1D0E /* MainStoryboard.storyboard */; };
+		A2ABFB5D15AFFAA4005E1D0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ABFB5C15AFFAA4005E1D0E /* ViewController.m */; };
+		A2ABFB6415AFFB08005E1D0E /* apple.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2ABFB6315AFFB08005E1D0E /* apple.jpeg */; };
+		A2ABFB6815AFFB35005E1D0E /* TouchUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ABFB6715AFFB35005E1D0E /* TouchUIImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2ABFB4215AFFAA4005E1D0E /* EditImageUndo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditImageUndo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2ABFB4615AFFAA4005E1D0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2ABFB4815AFFAA4005E1D0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2ABFB4A15AFFAA4005E1D0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2ABFB4E15AFFAA4005E1D0E /* EditImageUndo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EditImageUndo-Info.plist"; sourceTree = "<group>"; };
+		A2ABFB5015AFFAA4005E1D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2ABFB5215AFFAA4005E1D0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2ABFB5415AFFAA4005E1D0E /* EditImageUndo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EditImageUndo-Prefix.pch"; sourceTree = "<group>"; };
+		A2ABFB5515AFFAA4005E1D0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2ABFB5615AFFAA4005E1D0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2ABFB5915AFFAA4005E1D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A2ABFB5B15AFFAA4005E1D0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A2ABFB5C15AFFAA4005E1D0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A2ABFB6315AFFB08005E1D0E /* apple.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpeg; sourceTree = "<group>"; };
+		A2ABFB6615AFFB35005E1D0E /* TouchUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchUIImageView.h; sourceTree = "<group>"; };
+		A2ABFB6715AFFB35005E1D0E /* TouchUIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchUIImageView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2ABFB3F15AFFAA4005E1D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2ABFB4715AFFAA4005E1D0E /* UIKit.framework in Frameworks */,
+				A2ABFB4915AFFAA4005E1D0E /* Foundation.framework in Frameworks */,
+				A2ABFB4B15AFFAA4005E1D0E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2ABFB3715AFFAA4005E1D0E = {
+			isa = PBXGroup;
+			children = (
+				A2ABFB6515AFFB1C005E1D0E /* Classes */,
+				A2ABFB4C15AFFAA4005E1D0E /* EditImageUndo */,
+				A2ABFB4515AFFAA4005E1D0E /* Frameworks */,
+				A2ABFB4315AFFAA4005E1D0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2ABFB4315AFFAA4005E1D0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2ABFB4215AFFAA4005E1D0E /* EditImageUndo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2ABFB4515AFFAA4005E1D0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2ABFB4615AFFAA4005E1D0E /* UIKit.framework */,
+				A2ABFB4815AFFAA4005E1D0E /* Foundation.framework */,
+				A2ABFB4A15AFFAA4005E1D0E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2ABFB4C15AFFAA4005E1D0E /* EditImageUndo */ = {
+			isa = PBXGroup;
+			children = (
+				A2ABFB6315AFFB08005E1D0E /* apple.jpeg */,
+				A2ABFB5515AFFAA4005E1D0E /* AppDelegate.h */,
+				A2ABFB5615AFFAA4005E1D0E /* AppDelegate.m */,
+				A2ABFB5815AFFAA4005E1D0E /* MainStoryboard.storyboard */,
+				A2ABFB5B15AFFAA4005E1D0E /* ViewController.h */,
+				A2ABFB5C15AFFAA4005E1D0E /* ViewController.m */,
+				A2ABFB4D15AFFAA4005E1D0E /* Supporting Files */,
+			);
+			path = EditImageUndo;
+			sourceTree = "<group>";
+		};
+		A2ABFB4D15AFFAA4005E1D0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2ABFB4E15AFFAA4005E1D0E /* EditImageUndo-Info.plist */,
+				A2ABFB4F15AFFAA4005E1D0E /* InfoPlist.strings */,
+				A2ABFB5215AFFAA4005E1D0E /* main.m */,
+				A2ABFB5415AFFAA4005E1D0E /* EditImageUndo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2ABFB6515AFFB1C005E1D0E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A2ABFB6615AFFB35005E1D0E /* TouchUIImageView.h */,
+				A2ABFB6715AFFB35005E1D0E /* TouchUIImageView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2ABFB4115AFFAA4005E1D0E /* EditImageUndo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2ABFB6015AFFAA4005E1D0E /* Build configuration list for PBXNativeTarget "EditImageUndo" */;
+			buildPhases = (
+				A2ABFB3E15AFFAA4005E1D0E /* Sources */,
+				A2ABFB3F15AFFAA4005E1D0E /* Frameworks */,
+				A2ABFB4015AFFAA4005E1D0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EditImageUndo;
+			productName = EditImageUndo;
+			productReference = A2ABFB4215AFFAA4005E1D0E /* EditImageUndo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2ABFB3915AFFAA4005E1D0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A2ABFB3C15AFFAA4005E1D0E /* Build configuration list for PBXProject "EditImageUndo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A2ABFB3715AFFAA4005E1D0E;
+			productRefGroup = A2ABFB4315AFFAA4005E1D0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2ABFB4115AFFAA4005E1D0E /* EditImageUndo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2ABFB4015AFFAA4005E1D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2ABFB5115AFFAA4005E1D0E /* InfoPlist.strings in Resources */,
+				A2ABFB5A15AFFAA4005E1D0E /* MainStoryboard.storyboard in Resources */,
+				A2ABFB6415AFFB08005E1D0E /* apple.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2ABFB3E15AFFAA4005E1D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2ABFB5315AFFAA4005E1D0E /* main.m in Sources */,
+				A2ABFB5715AFFAA4005E1D0E /* AppDelegate.m in Sources */,
+				A2ABFB5D15AFFAA4005E1D0E /* ViewController.m in Sources */,
+				A2ABFB6815AFFB35005E1D0E /* TouchUIImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2ABFB4F15AFFAA4005E1D0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2ABFB5015AFFAA4005E1D0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A2ABFB5815AFFAA4005E1D0E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2ABFB5915AFFAA4005E1D0E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2ABFB5E15AFFAA4005E1D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2ABFB5F15AFFAA4005E1D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2ABFB6115AFFAA4005E1D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EditImageUndo/EditImageUndo-Prefix.pch";
+				INFOPLIST_FILE = "EditImageUndo/EditImageUndo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A2ABFB6215AFFAA4005E1D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EditImageUndo/EditImageUndo-Prefix.pch";
+				INFOPLIST_FILE = "EditImageUndo/EditImageUndo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2ABFB3C15AFFAA4005E1D0E /* Build configuration list for PBXProject "EditImageUndo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2ABFB5E15AFFAA4005E1D0E /* Debug */,
+				A2ABFB5F15AFFAA4005E1D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2ABFB6015AFFAA4005E1D0E /* Build configuration list for PBXNativeTarget "EditImageUndo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2ABFB6115AFFAA4005E1D0E /* Debug */,
+				A2ABFB6215AFFAA4005E1D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2ABFB3915AFFAA4005E1D0E /* Project object */;
+}
