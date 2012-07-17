@@ -32,6 +32,7 @@ const int ANIMATION_CURVE = UIViewAnimationCurveEaseIn;
 - (id)initWithImageName:(CGRect)frame imageName:(NSString *)imageName
 {
     UIImage *image = [UIImage imageNamed:imageName];
+//    UIImage *image = [[UIImage alloc]initWithContentsOfFile:imageName];
     return [self initWithImage:frame image:image];
 }
 

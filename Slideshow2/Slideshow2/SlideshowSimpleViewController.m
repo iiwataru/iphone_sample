@@ -20,6 +20,10 @@
     if (self) {
         // Custom initialization
         self.view.backgroundColor = [UIColor whiteColor];
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"natsu" ofType:@"mp3"];
+        NSURL *url = [NSURL fileURLWithPath:path];
+        audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     }
     return self;
 }
@@ -34,6 +38,11 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [audio stop];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -66,8 +75,9 @@
     idxImage = 0;
     [self next];
     
-    // プレイボタン非表示
-//    buttonPlay.hidden = YES;
+    // 音声再生
+    [audio stop];
+    [audio play];
 }
 
 /**
@@ -81,6 +91,8 @@
         // アニメーション画像追加
         AnimationImage *ai = [[AnimationImage alloc] initWithImage: CGRectMake(0, 0, 320, 460)
                                                              image:(UIImage *)[listImages objectAtIndex:idxImage]];
+//        AnimationImage *ai = [[AnimationImage alloc] initWithImageName: CGRectMake(0, 0, 320, 460)
+//                                                             imageName:(NSString *)[listImages objectAtIndex:idxImage]];
         [self.view addSubview:ai];
         [ai setCallback:self
    cbAnimationNextReady:@selector(callbackAnimationNextReady:)
@@ -106,9 +118,6 @@
 - (void)callbackAnimationDidFinish:(AnimationImage *)ai
 {
     //    NSLog(@"callbackAnimationDidFinish");
-//    if (idxImage > [listImages count]) {
-//        buttonPlay.hidden = NO;
-//    }
 }
 
 @end

@@ -65,6 +65,8 @@
     NSUInteger i = 0;
 	for(NSDictionary *dict in info) {
         
+        NSLog(@"%@", info);
+        
         // サムネイル表示
 		UIImageView *imageview = [[UIImageView alloc] initWithImage:[dict objectForKey:UIImagePickerControllerOriginalImage]];
 		[imageview setContentMode:UIViewContentModeScaleAspectFit];
@@ -74,6 +76,16 @@
         
         // 選択画像リストに追加
         [listImages addObject:imageview.image];
+
+        /*
+        //[dict objectForKey:UIImagePickerControllerReferenceURL] でパスをリスト化した方が良い（JSとの汎用化のため）
+        NSURL* url = [dict objectForKey:UIImagePickerControllerReferenceURL];
+        [listImages addObject:url.absoluteString];
+        
+        NSLog(@"%@", url.absoluteString);
+        NSLog(@"%@", url.absoluteURL);
+        NSLog(@"%@", url.path);
+         */
     }
 }
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Slideshow|Test</title>
+</head>
+
+<body>
+    <img src="umi1.jpeg" id="slideshow" alt="slideshow_area">
+    <div id="sample">sample text</div>
+
+    
+    <!-- Le javascript
+     ================================================== -->
+    <script type="text/javascript" src="jquery.js"></script>
+<!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+-->    <script>
+
+        /**
+         * 定数
+         */
+        const SLIDESHOW_INTERVAL = 1500;
+        
+        /**
+         * 変数
+         */
+        var timer;
+        var images = null;
+        var idxImages = 0;
+        
+        /**
+         * 画像パスリストをセットする
+         *
+         * @param imgs 画像パスの配列
+         */
+        function setImages(imgs)
+        {
+            images = imgs;
+        }
+        
+        /**
+         * 再生
+         */
+        function play()
+        {
+//            console.log("test");
+//            alert("play");
+            $('#slideshow').hide();
+            alert("hide");
+            
+            idxImages = 0;
+            timer = setInterval("next()", SLIDESHOW_INTERVAL);
+        }
+        
+        /**
+         * 停止
+         */
+        function stop()
+        {
+            clearInterval(timer);
+        }
+        
+        /**
+         * 次を表示
+         */
+        function next() {
+            if (images != null &&
+                images.length > 0 &&
+                images.length > idxImages)
+            {
+                document.getElementById('slideshow').src = images[idxImages++];
+            }
+        }
+    /*    
+        $(document).ready(function(){
+                          alert("ready");
+                          $('#slideshow').hide();
+                          });
+     */
+    </script>
+
+</body>
+</html>
+

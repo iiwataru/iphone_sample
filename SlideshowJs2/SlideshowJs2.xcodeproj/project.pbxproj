@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63AB7B6815B581A700119FA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AB7B6715B581A700119FA6 /* UIKit.framework */; };
+		63AB7B6A15B581A700119FA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AB7B6915B581A700119FA6 /* Foundation.framework */; };
+		63AB7B6C15B581A700119FA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AB7B6B15B581A700119FA6 /* CoreGraphics.framework */; };
+		63AB7B7215B581A700119FA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63AB7B7015B581A700119FA6 /* InfoPlist.strings */; };
+		63AB7B7415B581A700119FA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AB7B7315B581A700119FA6 /* main.m */; };
+		63AB7B7815B581A700119FA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AB7B7715B581A700119FA6 /* AppDelegate.m */; };
+		63AB7B7B15B581A700119FA6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AB7B7915B581A700119FA6 /* MainStoryboard.storyboard */; };
+		63AB7B7E15B581A700119FA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AB7B7D15B581A700119FA6 /* ViewController.m */; };
+		63AB7B8B15B583CE00119FA6 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 63AB7B8A15B583CE00119FA6 /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63AB7B6315B581A700119FA6 /* SlideshowJs2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowJs2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63AB7B6715B581A700119FA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63AB7B6915B581A700119FA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63AB7B6B15B581A700119FA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63AB7B6F15B581A700119FA6 /* SlideshowJs2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlideshowJs2-Info.plist"; sourceTree = "<group>"; };
+		63AB7B7115B581A700119FA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63AB7B7315B581A700119FA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63AB7B7515B581A700119FA6 /* SlideshowJs2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideshowJs2-Prefix.pch"; sourceTree = "<group>"; };
+		63AB7B7615B581A700119FA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63AB7B7715B581A700119FA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63AB7B7A15B581A700119FA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		63AB7B7C15B581A700119FA6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63AB7B7D15B581A700119FA6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63AB7B8A15B583CE00119FA6 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = SlideshowJs2/www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63AB7B6015B581A700119FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63AB7B6815B581A700119FA6 /* UIKit.framework in Frameworks */,
+				63AB7B6A15B581A700119FA6 /* Foundation.framework in Frameworks */,
+				63AB7B6C15B581A700119FA6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63AB7B5815B581A600119FA6 = {
+			isa = PBXGroup;
+			children = (
+				63AB7B8A15B583CE00119FA6 /* www */,
+				63AB7B6D15B581A700119FA6 /* SlideshowJs2 */,
+				63AB7B6615B581A700119FA6 /* Frameworks */,
+				63AB7B6415B581A700119FA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63AB7B6415B581A700119FA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63AB7B6315B581A700119FA6 /* SlideshowJs2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63AB7B6615B581A700119FA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63AB7B6715B581A700119FA6 /* UIKit.framework */,
+				63AB7B6915B581A700119FA6 /* Foundation.framework */,
+				63AB7B6B15B581A700119FA6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63AB7B6D15B581A700119FA6 /* SlideshowJs2 */ = {
+			isa = PBXGroup;
+			children = (
+				63AB7B7615B581A700119FA6 /* AppDelegate.h */,
+				63AB7B7715B581A700119FA6 /* AppDelegate.m */,
+				63AB7B7915B581A700119FA6 /* MainStoryboard.storyboard */,
+				63AB7B7C15B581A700119FA6 /* ViewController.h */,
+				63AB7B7D15B581A700119FA6 /* ViewController.m */,
+				63AB7B6E15B581A700119FA6 /* Supporting Files */,
+			);
+			path = SlideshowJs2;
+			sourceTree = "<group>";
+		};
+		63AB7B6E15B581A700119FA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63AB7B6F15B581A700119FA6 /* SlideshowJs2-Info.plist */,
+				63AB7B7015B581A700119FA6 /* InfoPlist.strings */,
+				63AB7B7315B581A700119FA6 /* main.m */,
+				63AB7B7515B581A700119FA6 /* SlideshowJs2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63AB7B6215B581A700119FA6 /* SlideshowJs2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63AB7B8115B581A700119FA6 /* Build configuration list for PBXNativeTarget "SlideshowJs2" */;
+			buildPhases = (
+				63AB7B5F15B581A700119FA6 /* Sources */,
+				63AB7B6015B581A700119FA6 /* Frameworks */,
+				63AB7B6115B581A700119FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideshowJs2;
+			productName = SlideshowJs2;
+			productReference = 63AB7B6315B581A700119FA6 /* SlideshowJs2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63AB7B5A15B581A600119FA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Tangit Corp.";
+			};
+			buildConfigurationList = 63AB7B5D15B581A600119FA6 /* Build configuration list for PBXProject "SlideshowJs2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63AB7B5815B581A600119FA6;
+			productRefGroup = 63AB7B6415B581A700119FA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63AB7B6215B581A700119FA6 /* SlideshowJs2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63AB7B6115B581A700119FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63AB7B7215B581A700119FA6 /* InfoPlist.strings in Resources */,
+				63AB7B7B15B581A700119FA6 /* MainStoryboard.storyboard in Resources */,
+				63AB7B8B15B583CE00119FA6 /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63AB7B5F15B581A700119FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63AB7B7415B581A700119FA6 /* main.m in Sources */,
+				63AB7B7815B581A700119FA6 /* AppDelegate.m in Sources */,
+				63AB7B7E15B581A700119FA6 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63AB7B7015B581A700119FA6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63AB7B7115B581A700119FA6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63AB7B7915B581A700119FA6 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63AB7B7A15B581A700119FA6 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63AB7B7F15B581A700119FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		63AB7B8015B581A700119FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63AB7B8215B581A700119FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideshowJs2/SlideshowJs2-Prefix.pch";
+				INFOPLIST_FILE = "SlideshowJs2/SlideshowJs2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63AB7B8315B581A700119FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideshowJs2/SlideshowJs2-Prefix.pch";
+				INFOPLIST_FILE = "SlideshowJs2/SlideshowJs2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63AB7B5D15B581A600119FA6 /* Build configuration list for PBXProject "SlideshowJs2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63AB7B7F15B581A700119FA6 /* Debug */,
+				63AB7B8015B581A700119FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63AB7B8115B581A700119FA6 /* Build configuration list for PBXNativeTarget "SlideshowJs2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63AB7B8215B581A700119FA6 /* Debug */,
+				63AB7B8315B581A700119FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63AB7B5A15B581A600119FA6 /* Project object */;
+}

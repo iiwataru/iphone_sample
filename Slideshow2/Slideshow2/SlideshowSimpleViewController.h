@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AnimationImage.h"
 
+#import <AVFoundation/AVFoundation.h>  
+
+static AVAudioPlayer *audio = nil;
+
 NSMutableArray *listImages;
 NSInteger idxImage;
 
