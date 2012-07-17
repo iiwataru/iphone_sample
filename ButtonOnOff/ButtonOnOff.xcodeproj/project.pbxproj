@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2EC579915B5115D008807C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EC579815B5115D008807C9 /* UIKit.framework */; };
+		A2EC579B15B5115D008807C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EC579A15B5115D008807C9 /* Foundation.framework */; };
+		A2EC579D15B5115D008807C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EC579C15B5115D008807C9 /* CoreGraphics.framework */; };
+		A2EC57A315B5115D008807C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2EC57A115B5115D008807C9 /* InfoPlist.strings */; };
+		A2EC57A515B5115D008807C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC57A415B5115D008807C9 /* main.m */; };
+		A2EC57A915B5115D008807C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC57A815B5115D008807C9 /* AppDelegate.m */; };
+		A2EC57AC15B5115D008807C9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EC57AA15B5115D008807C9 /* MainStoryboard.storyboard */; };
+		A2EC57AF15B5115D008807C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EC57AE15B5115D008807C9 /* ViewController.m */; };
+		A2EC57B815B511DC008807C9 /* apple.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2EC57B615B511DC008807C9 /* apple.jpeg */; };
+		A2EC57B915B511DC008807C9 /* himawari.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2EC57B715B511DC008807C9 /* himawari.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2EC579415B5115D008807C9 /* ButtonOnOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonOnOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EC579815B5115D008807C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2EC579A15B5115D008807C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2EC579C15B5115D008807C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2EC57A015B5115D008807C9 /* ButtonOnOff-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ButtonOnOff-Info.plist"; sourceTree = "<group>"; };
+		A2EC57A215B5115D008807C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2EC57A415B5115D008807C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2EC57A615B5115D008807C9 /* ButtonOnOff-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ButtonOnOff-Prefix.pch"; sourceTree = "<group>"; };
+		A2EC57A715B5115D008807C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2EC57A815B5115D008807C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2EC57AB15B5115D008807C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A2EC57AD15B5115D008807C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A2EC57AE15B5115D008807C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A2EC57B615B511DC008807C9 /* apple.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpeg; sourceTree = "<group>"; };
+		A2EC57B715B511DC008807C9 /* himawari.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = himawari.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2EC579115B5115D008807C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EC579915B5115D008807C9 /* UIKit.framework in Frameworks */,
+				A2EC579B15B5115D008807C9 /* Foundation.framework in Frameworks */,
+				A2EC579D15B5115D008807C9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2EC578915B5115D008807C9 = {
+			isa = PBXGroup;
+			children = (
+				A2EC57B515B511CD008807C9 /* Resources */,
+				A2EC579E15B5115D008807C9 /* ButtonOnOff */,
+				A2EC579715B5115D008807C9 /* Frameworks */,
+				A2EC579515B5115D008807C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2EC579515B5115D008807C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2EC579415B5115D008807C9 /* ButtonOnOff.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2EC579715B5115D008807C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2EC579815B5115D008807C9 /* UIKit.framework */,
+				A2EC579A15B5115D008807C9 /* Foundation.framework */,
+				A2EC579C15B5115D008807C9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2EC579E15B5115D008807C9 /* ButtonOnOff */ = {
+			isa = PBXGroup;
+			children = (
+				A2EC57A715B5115D008807C9 /* AppDelegate.h */,
+				A2EC57A815B5115D008807C9 /* AppDelegate.m */,
+				A2EC57AA15B5115D008807C9 /* MainStoryboard.storyboard */,
+				A2EC57AD15B5115D008807C9 /* ViewController.h */,
+				A2EC57AE15B5115D008807C9 /* ViewController.m */,
+				A2EC579F15B5115D008807C9 /* Supporting Files */,
+			);
+			path = ButtonOnOff;
+			sourceTree = "<group>";
+		};
+		A2EC579F15B5115D008807C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2EC57A015B5115D008807C9 /* ButtonOnOff-Info.plist */,
+				A2EC57A115B5115D008807C9 /* InfoPlist.strings */,
+				A2EC57A415B5115D008807C9 /* main.m */,
+				A2EC57A615B5115D008807C9 /* ButtonOnOff-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2EC57B515B511CD008807C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2EC57B615B511DC008807C9 /* apple.jpeg */,
+				A2EC57B715B511DC008807C9 /* himawari.jpeg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2EC579315B5115D008807C9 /* ButtonOnOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EC57B215B5115D008807C9 /* Build configuration list for PBXNativeTarget "ButtonOnOff" */;
+			buildPhases = (
+				A2EC579015B5115D008807C9 /* Sources */,
+				A2EC579115B5115D008807C9 /* Frameworks */,
+				A2EC579215B5115D008807C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButtonOnOff;
+			productName = ButtonOnOff;
+			productReference = A2EC579415B5115D008807C9 /* ButtonOnOff.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2EC578B15B5115D008807C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A2EC578E15B5115D008807C9 /* Build configuration list for PBXProject "ButtonOnOff" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A2EC578915B5115D008807C9;
+			productRefGroup = A2EC579515B5115D008807C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2EC579315B5115D008807C9 /* ButtonOnOff */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2EC579215B5115D008807C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EC57A315B5115D008807C9 /* InfoPlist.strings in Resources */,
+				A2EC57AC15B5115D008807C9 /* MainStoryboard.storyboard in Resources */,
+				A2EC57B815B511DC008807C9 /* apple.jpeg in Resources */,
+				A2EC57B915B511DC008807C9 /* himawari.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2EC579015B5115D008807C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EC57A515B5115D008807C9 /* main.m in Sources */,
+				A2EC57A915B5115D008807C9 /* AppDelegate.m in Sources */,
+				A2EC57AF15B5115D008807C9 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2EC57A115B5115D008807C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EC57A215B5115D008807C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A2EC57AA15B5115D008807C9 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EC57AB15B5115D008807C9 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2EC57B015B5115D008807C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2EC57B115B5115D008807C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2EC57B315B5115D008807C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ButtonOnOff/ButtonOnOff-Prefix.pch";
+				INFOPLIST_FILE = "ButtonOnOff/ButtonOnOff-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A2EC57B415B5115D008807C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ButtonOnOff/ButtonOnOff-Prefix.pch";
+				INFOPLIST_FILE = "ButtonOnOff/ButtonOnOff-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2EC578E15B5115D008807C9 /* Build configuration list for PBXProject "ButtonOnOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EC57B015B5115D008807C9 /* Debug */,
+				A2EC57B115B5115D008807C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EC57B215B5115D008807C9 /* Build configuration list for PBXNativeTarget "ButtonOnOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EC57B315B5115D008807C9 /* Debug */,
+				A2EC57B415B5115D008807C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2EC578B15B5115D008807C9 /* Project object */;
+}
