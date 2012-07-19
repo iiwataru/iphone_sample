@@ -41,6 +41,7 @@ function play()
 {
     audioPlay();
     idxImages = 0;
+    cntImages = 0;
     nextImage();
 }
 
