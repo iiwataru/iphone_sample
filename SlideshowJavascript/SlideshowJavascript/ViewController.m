@@ -79,7 +79,8 @@
 
     for (NSDictionary *dict in info) {
         UIImage *image = [dict objectForKey:UIImagePickerControllerOriginalImage];
-        imageData = UIImageJPEGRepresentation(image, 1.0f);
+//        [image drawInRect:CGRectMake(0, 0, image.size.width/1000, image.size.height/1000)];
+        imageData = UIImageJPEGRepresentation(image, 0.1f);
         document_path = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"];
         path = [NSString stringWithFormat:@"%@/save_image%d.jpg", document_path, rand()];
         [imageData writeToFile:path atomically:YES];
