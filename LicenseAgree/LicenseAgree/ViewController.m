@@ -45,6 +45,12 @@
  */
 - (IBAction)buttonClear:(id)sender {
     [UserDefaults clear];
+    viewLicense.hidden = NO;
+    [UIView beginAnimations:nil context:nil];  // 条件指定開始
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    viewLicense.alpha = 1.0;
+    [UIView commitAnimations];
 }
 
 /**
@@ -55,7 +61,11 @@
     [UserDefaults set:@"LICENSE_AGREED" value:@"1"];
     
     // 規約画面を非表示にする
-    viewLicense.hidden = YES;
+    [UIView beginAnimations:nil context:nil];  // 条件指定開始
+    [UIView setAnimationDuration:0.7];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    viewLicense.alpha = 0;
+    [UIView commitAnimations];
 }
 
 /**
