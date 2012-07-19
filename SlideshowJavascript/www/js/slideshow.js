@@ -10,7 +10,8 @@ const SLIDESHOW_INTERVAL = 2000;
 var timer;
 var images = [];
 var idxImages = 0;
-var cntImages = 0;
+//var cntImages = 0;
+var audio = null;
 
 /**
  * 画像パスリストをセットする
@@ -20,7 +21,11 @@ var cntImages = 0;
 function setImages(imgs)
 {
     images = imgs;
-    cntImages = images.length;
+}
+
+function initImage()
+{
+    images = Array();
 }
 
 /**
@@ -30,8 +35,7 @@ function setImages(imgs)
  */
 function addImage(img)
 {
-    images[cntImages] = img;
-    cntImages++;
+    images.push(img);
 }
 
 /**
@@ -39,10 +43,20 @@ function addImage(img)
  */
 function play()
 {
-    audioPlay();
     idxImages = 0;
-    cntImages = 0;
-    nextImage();
+    
+    if (audio == null)
+    {
+        audio = document.getElementById("audio");
+        audio.play();
+        audio.addEventListener("canplay", function(){
+                               nextImage();
+                               }, false);
+    } else {
+//        audio.stop();
+        audio.play();
+        nextImage();
+    }
 }
 
 /**
@@ -57,6 +71,7 @@ function nextImage()
         images.length > idxImages)
     {
         id = 'box' + idxImages;
+        $('#' + id).remove();
         
         // 枠を追加
         $('#wrap').append('<div id="' + id + '" class="box"><div>');

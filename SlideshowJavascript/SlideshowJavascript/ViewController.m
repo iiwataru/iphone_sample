@@ -70,21 +70,32 @@
  */
 - (void)elcImagePickerController:(ELCImagePickerController *)picker didFinishPickingMediaWithInfo:(NSArray *)info {
 
-    image_count = 1;
+//    image_count = 1;
     [picker dismissModalViewControllerAnimated:YES];
     NSData *imageData = [[NSData alloc] init];
     NSString *document_path = [[NSString alloc] init];
     NSString *path = [[NSString alloc] init];
+    NSMutableArray *imagePaths = [[NSMutableArray alloc] init];
 
     for (NSDictionary *dict in info) {
         UIImage *image = [dict objectForKey:UIImagePickerControllerOriginalImage];
         imageData = UIImageJPEGRepresentation(image, 1.0f);
         document_path = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"];
-        path = [NSString stringWithFormat:@"%@/save_image%d.jpg", document_path, image_count];
+        path = [NSString stringWithFormat:@"%@/save_image%d.jpg", document_path, rand()];
         [imageData writeToFile:path atomically:YES];
-        image_count++;
+//        image_count++;
+        [imagePaths addObject:path];
     }
     isSelectImage = YES;
+    
+    // JSへアプリ内(tmp)の画像パスを登録
+    [webview stringByEvaluatingJavaScriptFromString:@"initImage();"];
+    
+    for (int cnt = 0; cnt < [imagePaths count]; cnt++) {
+        path = [imagePaths objectAtIndex:cnt];
+        NSString *jsstr = [NSString stringWithFormat:@"addImage('%@');", path];
+        [webview stringByEvaluatingJavaScriptFromString:jsstr];
+    }
 }
 
 /**
@@ -96,20 +107,9 @@
 }
 
 /**
- * JSへアプリ内(tmp)の画像パスを渡し、スライドショーをスタートさせる
+ * スライドショーをスタートさせる
  */
 - (void)startSlideShow {
-
-    NSString *document_path = [[NSString alloc] init];
-    document_path = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"];
-    NSString *path = [[NSString alloc] init];
-
-    for (int cnt = 1; cnt < image_count; cnt++) {
-        path = [NSString stringWithFormat:@"%@/save_image%d.jpg", document_path, cnt];
-        NSString *jsstr = [NSString stringWithFormat:@"addImage('%@');", path];
-        [webview stringByEvaluatingJavaScriptFromString:jsstr];
-    }
-
     [webview stringByEvaluatingJavaScriptFromString:@"play();"];
 }
 @end
