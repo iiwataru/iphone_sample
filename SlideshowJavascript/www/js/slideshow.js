@@ -8,7 +8,7 @@ const SLIDESHOW_INTERVAL = 2000;
  * 変数
  */
 var timer;
-var images = null;
+var images = [];
 var idxImages = 0;
 var cntImages = 0;
 
@@ -25,10 +25,10 @@ function setImages(imgs)
 
 /**
  * 画像パスを追加でセットする
- * 
+ *
  * @param img 画像パス
  */
-function addImages(img)
+function addImage(img)
 {
     images[cntImages] = img;
     cntImages++;
@@ -39,7 +39,7 @@ function addImages(img)
  */
 function play()
 {
-    //clearTimeout(timer);
+    audioPlay();
     idxImages = 0;
     nextImage();
 }
@@ -67,7 +67,7 @@ function nextImage()
         .delay(SLIDESHOW_INTERVAL)
         .animate({'left': '-210px', opacity: 'hide'}, MOVE_DURATION)
         ;
-
+        
         // 画像を追加
         imgId = 'img' + idxImages;
         $('#' + id).html('<img src="' + images[idxImages++] + '" id="' + imgId + '">');
@@ -78,7 +78,7 @@ function nextImage()
                             ratioH = 240 / $('#' + imgId).height();
                             $('#' + imgId).css({'zoom': Math.min(ratioW, ratioH)});
                             });
-
+        
         // 次の画像を表示予約
         timer = window.setTimeout("nextImage()", SLIDESHOW_INTERVAL + MOVE_DURATION);
         
@@ -92,5 +92,10 @@ function nextImage()
  */
 function stop()
 {
-//    clearTimeout(timer);
+    //    clearTimeout(timer);
+}
+
+// 音楽の再生
+function audioPlay(){
+    document.getElementById("audio").play();
 }

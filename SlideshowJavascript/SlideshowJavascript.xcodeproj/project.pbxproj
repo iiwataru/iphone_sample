@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A253FBD915B661270024FF1A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A253FBD815B661270024FF1A /* AssetsLibrary.framework */; };
-		A253FC2E15B663AA0024FF1A /* www in Resources */ = {isa = PBXBuildFile; fileRef = A253FC2D15B663AA0024FF1A /* www */; };
 		A253FC5615B68F390024FF1A /* wind_collage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A253FC5515B68F390024FF1A /* wind_collage.mp3 */; };
+		A2E1DE2C15B792E3009BA9B2 /* www in Resources */ = {isa = PBXBuildFile; fileRef = A2E1DE2B15B792E3009BA9B2 /* www */; };
 		A2FFCA2015B6458500A2B2EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FFCA1F15B6458500A2B2EE /* UIKit.framework */; };
 		A2FFCA2215B6458500A2B2EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FFCA2115B6458500A2B2EE /* Foundation.framework */; };
 		A2FFCA2415B6458500A2B2EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FFCA2315B6458500A2B2EE /* CoreGraphics.framework */; };
@@ -35,8 +35,8 @@
 
 /* Begin PBXFileReference section */
 		A253FBD815B661270024FF1A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		A253FC2D15B663AA0024FF1A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../SlideshowJs2/SlideshowJs2/www; sourceTree = "<group>"; };
 		A253FC5515B68F390024FF1A /* wind_collage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wind_collage.mp3; sourceTree = "<group>"; };
+		A2E1DE2B15B792E3009BA9B2 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		A2FFCA1B15B6458500A2B2EE /* SlideshowJavascript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowJavascript.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FFCA1F15B6458500A2B2EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A2FFCA2115B6458500A2B2EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,7 +90,7 @@
 		A2FFCA1015B6458500A2B2EE = {
 			isa = PBXGroup;
 			children = (
-				A253FC2D15B663AA0024FF1A /* www */,
+				A2E1DE2B15B792E3009BA9B2 /* www */,
 				A2FFCA5B15B64A3800A2B2EE /* Classes */,
 				A2FFCA2515B6458500A2B2EE /* SlideshowJavascript */,
 				A2FFCA1E15B6458500A2B2EE /* Frameworks */,
@@ -227,8 +227,8 @@
 				A2FFCA7815B64A3800A2B2EE /* ELCImagePickerController.xib in Resources */,
 				A2FFCA7B15B64A3800A2B2EE /* Overlay.png in Resources */,
 				A2FFCA7C15B64A3800A2B2EE /* Overlay@2x.png in Resources */,
-				A253FC2E15B663AA0024FF1A /* www in Resources */,
 				A253FC5615B68F390024FF1A /* wind_collage.mp3 in Resources */,
+				A2E1DE2C15B792E3009BA9B2 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
