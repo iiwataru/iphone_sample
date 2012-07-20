@@ -2,7 +2,7 @@
  * 定数
  */
 const MOVE_DURATION = 1000;
-const SLIDESHOW_INTERVAL = 2000;
+const SLIDESHOW_INTERVAL = 2500;
 
 /**
  * 変数
@@ -53,7 +53,6 @@ function play()
                                nextImage();
                                }, false);
     } else {
-//        audio.stop();
         audio.play();
         nextImage();
     }
