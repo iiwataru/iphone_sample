@@ -1,0 +1,45 @@
+body{
+    background:#000;
+}
+div#stage{
+    background:#000;
+    width:320px;
+    height:300px;
+}
+
+.box,
+.star,
+.circle {
+    position:absolute;
+}
+
+div#star-box1 {
+	left:20px;
+}
+div#star-box2 {
+	left:40px;
+}
+div#star-box3 {
+	left:0px;
+}
+
+div#star1{
+	left:20px;
+	top:100px;
+}
+div#star2{
+	left:120px;
+	top:180px;
+}
+div#star3{
+	left:240px;
+	top:60px;
+}
+
+
+.circle img{
+    width:10px;
+}
+.star img{
+    width:40px;
+}
