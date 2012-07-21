@@ -134,81 +134,100 @@
  * テンプレートをダウンロード
  */
 - (IBAction)buttonTemplateDl:(id)sender {
-    if (templatePath != nil) {
-        return;
-    }
-    
-    // DL
-    NSURL *url = [NSURL URLWithString:@"https://dl.dropbox.com/u/717602/test/pic/jsslide1_copy.zip"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLResponse *response = nil;
-    NSError *error = nil;
-    NSData *data = [NSURLConnection sendSynchronousRequest : request
-                                         returningResponse : &response
-                                                     error : &error
-                    ];
-    
-    // DL error
-    NSString *error_str = [error localizedDescription];
-    if (0<[error_str length]) {
-        UIAlertView *alert = [
-                              [UIAlertView alloc]
-                              initWithTitle : @"RequestError"
-                              message : error_str
-                              delegate : nil
-                              cancelButtonTitle : @"OK"
-                              otherButtonTitles : nil
-                              ];
-        [alert show];
-    }
-    
-    // 保存
-    NSString *dir = [[NSString alloc] init];
-    dir = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"];
-    NSString *filename = [NSString stringWithFormat:@"zip%d.zip", rand()];
-    NSString *zipPath = [dir stringByAppendingPathComponent:filename];
-    
-    NSLog(@"%@",zipPath);
-    
-    BOOL success = NO;
-    success = [data writeToFile:zipPath atomically:YES];
-    
-    if (success) {
-        NSLog(@"Download OK");
-    }else {
-        NSLog(@"Download NG");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"エラー"
-                                                        message:@"保存に失敗しました"
-                                                       delegate:nil
-                                              cancelButtonTitle:nil
-                                              otherButtonTitles:@"OK", nil];
-        [alert show];
-    }
-    
-    // Unzip
-    ZipArchive* za = [[ZipArchive alloc] init];
-    
-    if([za UnzipOpenFile:zipPath])
-    {
-        NSString *dir = [[NSString alloc] init];
-        dir = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"];
-        NSString *filename = [NSString stringWithFormat:@"slide%d", rand()];
-        NSString *unzipPath = [dir stringByAppendingPathComponent:filename];
+    if (templatePath == nil) {
+
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         
-        NSLog(@"%@", unzipPath);
+        // DL
+        NSURL *url = [NSURL URLWithString:@"https://dl.dropbox.com/u/717602/test/pic/jsslide1_copy.zip"];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        NSURLResponse *response = nil;
+        NSError *error = nil;
+        NSData *data = [NSURLConnection sendSynchronousRequest : request
+                                             returningResponse : &response
+                                                         error : &error
+                        ];
         
-        BOOL ret = [za UnzipFileTo:unzipPath overWrite:YES];
-        if(NO == ret) {
-            // エラー処理
-            NSLog(@"Unzip NG");
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        
+        // DL Error
+        NSString *error_str = [error localizedDescription];
+        if (0<[error_str length]) {
+            UIAlertView *alert = [
+                                  [UIAlertView alloc]
+                                  initWithTitle : @"RequestError"
+                                  message : error_str
+                                  delegate : nil
+                                  cancelButtonTitle : @"OK"
+                                  otherButtonTitles : nil
+                                  ];
+            [alert show];
+
+        // DL Success
         } else {
-            NSLog(@"Unzip OK");
+            
+            // Save
+            NSString *dir = [[NSString alloc] init];
+            dir = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"];
+            NSString *filename = [NSString stringWithFormat:@"zip%d.zip", rand()];
+            NSString *zipPath = [dir stringByAppendingPathComponent:filename];
+            
+            NSLog(@"%@",zipPath);
+            
+            BOOL success = NO;
+            success = [data writeToFile:zipPath atomically:YES];
+            
+            // Save Success
+            if (success) {
+                NSLog(@"Download OK");
+                
+                // Unzip
+                ZipArchive* za = [[ZipArchive alloc] init];
+                
+                if([za UnzipOpenFile:zipPath])
+                {
+                    NSString *dir = [[NSString alloc] init];
+                    dir = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"];
+                    NSString *filename = [NSString stringWithFormat:@"slide%d", rand()];
+                    NSString *unzipPath = [dir stringByAppendingPathComponent:filename];
+                    
+                    NSLog(@"%@", unzipPath);
+                    
+                    BOOL ret = [za UnzipFileTo:unzipPath overWrite:YES];
+                    
+                    // Unzip Error
+                    if(NO == ret) {
+                        // エラー処理
+                        NSLog(@"Unzip NG");
+
+                    // Unzip Success
+                    } else {
+                        NSLog(@"Unzip OK");
+                        
+                        [[[UIAlertView alloc] initWithTitle:@"成功"
+                                                    message:@"テンプレートをダウンロードしました"
+                                                   delegate:nil
+                                          cancelButtonTitle:nil
+                                          otherButtonTitles:@"OK", nil] show];
+
+                        templatePath = unzipPath;
+                    }
+                    
+                    [za UnzipCloseFile];
+                }
+                
+            // Save Error
+            }else {
+                NSLog(@"Download NG");
+                
+                [[[UIAlertView alloc] initWithTitle:@"エラー"
+                                            message:@"保存に失敗しました"
+                                           delegate:nil
+                                  cancelButtonTitle:nil
+                                  otherButtonTitles:@"OK", nil] show];
+            }
         }
-        [za UnzipCloseFile];
-        
-        templatePath = unzipPath;
     }
-    
 }
 
 /**

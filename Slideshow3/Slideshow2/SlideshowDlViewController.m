@@ -57,17 +57,11 @@
 {
     NSLog(@"setTemplatePath %@", templatePath);
     
-//    templatePath = path;
-    
     // Webview 生成
-    webview = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 300)];
-    
     NSString *filepath = [NSString stringWithFormat:@"%@%@",templatePath,@"/jsslide1_copy/pages/test.html"];
     NSLog(@"%@",filepath);
-//    NSString *path = [[NSBundle mainBundle] pathForResource:filepath ofType:@"html"];
-//    NSLog(@"templatePath %@", path);
     
-//    [webview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
+    webview = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 300)];
     [webview loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filepath]]];
     [self.view addSubview:webview]; 
     
@@ -96,10 +90,6 @@
         path = [NSString stringWithFormat:@"%@/save_image%d.jpg", document_path, rand()];
         [imageData writeToFile:path atomically:YES];
         [imagePaths addObject:path];
-        
-        //        UIImage *img = [[UIImage alloc]initWithContentsOfFile:path];
-        //        UIImageView *iv = [[UIImageView alloc]initWithImage:img];
-        //        [self.view addSubview:iv];
     }
     
     // JSへアプリ内(tmp)の画像パスを登録
