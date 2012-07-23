@@ -1,0 +1,70 @@
+<html>
+    <head>
+        
+        <!-- JavaScriptの実装 -->
+        <script>
+
+            /**
+             * 画面のロードが終わった時のイベント
+             */
+            onload = function() {
+                drawPlanet();
+            }
+            function drawPlanet() {
+
+                // Canvasを取得
+                var canvas = document.getElementById('canvas');
+                // Canvasのwidth,heightを画面と同じに設定
+                canvas.width = document.body.clientWidth;
+                canvas.height = document.body.clientHeight;
+
+                // CanvasのContextを取得
+                var context = canvas.getContext('2d');
+                
+                // 描画用配列images
+                var images = [];
+                for (var cnt = 0; cnt < 8; cnt++) {
+                    // imageを作成
+                    var image = new Image();
+                    image.src = cnt+1 + ".gif"; //?" + new Date().getTime());
+                    images.push(image);
+                }
+                
+                /**
+                 * imageのロードが終わった時のイベント
+                 */
+                image.onload = function() {
+                    display(canvas, context, images);
+//                    var point_x = getRandom(0, canvas.width);
+//                    var point_y = getRandom(0, canvas.height);
+//                    context.drawImage(image, point_x, point_y);
+                }
+            }
+            
+            function display(canvas, context, arrayImage) {
+                for (var cnt = 0; cnt < 8; cnt++) {
+                        var point_x = getRandom(0, canvas.width - arrayImage[cnt].width);
+                        var point_y = getRandom(0, canvas.height - arrayImage[cnt].height);
+                        context.drawImage(arrayImage[cnt], point_x, point_y);
+                }
+            }
+
+            /**
+             * ランダムで値を返す
+             */
+            function getRandom(minInt, maxInt) {
+                // Math.randomを使って疑似乱数を取得
+                var ret = Math.floor(Math.random()*(maxInt - minInt) + minInt);
+                return ret;
+                
+            }
+        </script>
+        <!--/ JavaScriptの実装 /-->
+        
+    </head>
+    <body>
+        <canvas id="canvas">
+            
+        </canvas>
+    </body>
+</html>
