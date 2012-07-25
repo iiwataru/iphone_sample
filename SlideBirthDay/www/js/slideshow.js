@@ -9,40 +9,62 @@
  */
 var canvas_back; // 背景用canvas
 var context_back; // 背景用canvasのcontext
+var canvas_slide; // スライド用canvas
+var context_slide; // スライド用canvasのcontext
 var canvas_main; // 描画用canvas
 var context_main; // 描画用canvasのcontext
-var images_path = ["umi1.jpeg", "umi2.jpeg", "umi3.jpeg", "umi4.jpeg", "umi5.jpeg"]; // スライドショー用のイメージ配列
+var images_path = ["umi1.jpeg", "umi2.jpeg", "umi3.jpeg", "umi4.jpeg", "umi5.jpeg"]; // スライドショー用の画像パス配列
+var images_list = []; // スライドショー用の画像データ配列
+var images_index;
 var frame_rate = 30; // フレームレート
 var timer; // 描画を繰り返す為のタイマー
 
 var stars = []; // Starクラスを入れる為の配列
 var words = []; // Wordクラスを入れる為の配列
 
-var first_star;
-var first_word;
-var secound_star;
-var secound_word;
-var star_image = new Image();
-var word_image = new Image();
+var first_star; // テスト用
+var first_word; // テスト用
+var secound_star; // テスト用
+var secound_word; // テスト用
+var star_image = new Image(); // テスト用
+var word_image = new Image(); // テスト用
+var mask_image = new Image(); // テスト用
+var frame_image = new Image(); // テスト用
 
 /**
  * htmlの読み込み終了時処理
  */
 function didLoadHtml() {
 
+    // 画像パスを使って配列へ画像読み込み
+    for (var cnt = 0; cnt < images_path.length; cnt++) {
+        images_list[cnt] = new Image();
+        images_list[cnt].src = "../image/" + images_path[cnt];
+    }
+    // マスク用画像の読み込み
+    mask_image.src = "../image/Path_1.png";
+    // スライド枠画像の読み込み
+    frame_image.src = "../image/p1.png";
+    
     // 背景用canvasを取得
     canvas_back = document.getElementById("canvas_back");
+    // スライド用canvasを取得
+    canvas_slide = document.getElementById("canvas_slide");
     // 描画用canvasを取得
     canvas_main = document.getElementById("canvas_main");
     
     // canvasサイズを画面サイズと同じに設定
     canvas_back.width = document.body.clientWidth;
     canvas_back.height = document.body.clientHeight;
+    canvas_slide.width = document.body.clientWidth;
+    canvas_slide.height = document.body.clientHeight;
     canvas_main.width = document.body.clientWidth;
     canvas_main.height = document.body.clientHeight;
     
     // 背景用canvasのcontextを取得
     context_back = canvas_back.getContext("2d");
+    // スライド用canvasのcontextを取得
+    context_slide = canvas_slide.getContext("2d");
     // 描画用canvasのcontextを取得
     context_main = canvas_main.getContext("2d");
 
@@ -86,6 +108,7 @@ function setSlideshow() {
     star_image.src = "../image/star_box.png?" + new Date().getTime();
     first_word = new Word(40, 200, 270, 130);
     word_image.src = "../image/hb_txt0001.png?" + new Date().getTime();
+    images_index = 0;
     
     star_image.onload = function() {
         word_image.onload = function() {
@@ -166,16 +189,57 @@ function play() {
  * 本編を再生の準備処理
  */
 function setMainSlideshow() {
-    secound_star = new Star(200, 180, 40, 40);
-    secound_word = new Word(50, 280, 210, 100);
-    //timer = setTimeout("MainPlay()",1000);
-    MainPlay();
+    if (images_index < images_list.length) {
+        secound_star = new Star(280, 90, 40, 40);
+        secound_word = new Word(50, 280, 210, 100);
+        //timer = setTimeout("MainPlay()",1000);
+        images_index = showSlideImage(images_index);
+        MainPlay();
+    } else {
+        // テスト用 スライドショーが終了したらリピートする
+        context_slide.clearRect(0, 0, canvas_slide.width, canvas_slide.height);
+        setSlideshow();
+    }
 }
 
+/**
+ * スライドショーイメージの描画
+ * 
+ * @param int images_listに対する添字 表示する画像を判別する
+ */
+function showSlideImage(index) {
+
+    var ret;
+    // 引数が指定されている
+    if (arguments.length > 0) {
+        // canvas_slideの内容を消去(黒の透明度100%で上書き)
+        context_slide.clearRect(0, 0, canvas_slide.width, canvas_slide.height);
+        // canvas_slideの透明度を1.0に戻す
+        //canvas_slide.globalAlpha = 1.0;
+        // スライドにマスク画像を表示
+        context_slide.drawImage(mask_image, 10, 10, canvas_slide.width*0.9, canvas_slide.height*0.9);
+        // スライド用のマスク設定を適用
+        context_slide.globalCompositeOperation = "source-atop";
+        // スライドに画像を表示
+        context_slide.drawImage(images_list[arguments[0]], 10, 10, canvas_slide.width*0.9, canvas_slide.height*0.9);
+        // スライド用のマスク設定を解除
+        context_slide.globalCompositeOperation = "source-over";
+        // 枠画像の表示
+        //context_slide.drawImage(frame_image, 0, 0, canvas_slide.width, canvas_slide.height);
+
+        ret = index + 1;
+    } else {
+        ret = 0;
+    }
+    return ret;
+}
+
+/**
+ * 本編アニメーションの再生
+ */
 function MainPlay() {
     var success = false;
     
-    // canvas_mainの内容を消去(黒の透明度100%で上書き)
     context_main.clearRect(0, 0, canvas_main.width, canvas_main.height);
     
     if(secound_star.enable) {
@@ -186,6 +250,9 @@ function MainPlay() {
         context_main.rotate(angle * Math.PI / 180);
         context_main.translate(-1 * rotate_point_x, -1 * rotate_point_y);
         context_main.globalAlpha = secound_star.alpha;
+        
+        //context_slide.globalAlpha = secound_star.alpha; // テスト用スライドショーの透明度増加
+        
         context_main.drawImage(star_image,
                                secound_star.point_x,
                                secound_star.point_y,
@@ -212,5 +279,6 @@ function MainPlay() {
     if (success) {
         timer = setTimeout("MainPlay()", 1000 / frame_rate);
     } else {
+        setMainSlideshow();
     }
 }
