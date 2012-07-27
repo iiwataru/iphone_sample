@@ -1,14 +1,14 @@
 var SuperClass; 
 
 (function() {
-    SuperClass = function() {
+    SuperClass = function(argument) {
+        this.argument = argument;
     };
-
  
     SuperClass.prototype = {
 
         callSuperAlert : function() {
-            alert("call Super Alert");
+            alert("super class : " + this.argument);
         },
 
         getSuperString : function () {
